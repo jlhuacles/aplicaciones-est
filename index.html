@@ -1006,7 +1006,7 @@
             }
 
             /* style for comments text */
-
+          
 
         }
     </style>
@@ -1124,46 +1124,49 @@
         .modal-content {
             background-color: #fff;
             /* margin: 50vh auto; */
-            padding: 20px;
-            max-width: 400px;
+            /* padding: 20px; */
+            max-width: 500px;
             border-radius: 5px;
             position: relative;
             top: 40vh;
             margin-left: auto;
             margin-right: auto;
-            height: 30vh;
-
+            height: auto;
+            border: 4px solid #036a93;
+            font-size: 16px;
         }
 
         .modal-close {
-            color: #aaa;
-            font-size: 28px;
-            font-weight: bold;
-            position: absolute;
-            top: 10px;
-            right: 20px;
-            cursor: pointer;
+           
         }
 
         .modal-title {
             font-size: 20px;
             font-weight: bold;
             margin-bottom: 10px;
+            color: #fff;
+            background-color: #036a93;
+            padding: 3px;
         }
 
         .modal-info {
             margin-bottom: 10px;
+            margin: 13px;
         }
 
         .modal-close {
+            color: #fff;
+            font-size: 28px;
+            font-weight: bold;
+            
             position: absolute;
             top: 10px;
             right: 10px;
             width: 30px;
             height: 30px;
             border-radius: 50%;
-            background-color: #fff;
-            color: #aaa;
+            background-color: red;
+            color: #fff;
             font-size: 18px;
             display: flex;
             align-items: center;
@@ -1256,16 +1259,21 @@
                 </div>
             </div>
             <section id="w-section">
-                <div class="tablet">
-                    <div class="top-bar">
-                        <div class="camera"></div>
-                        <div class="buttons">
-                            <div class="button"></div>
-                            <div class="button"></div>
-                            <div class="button"></div>
-                        </div>
+                <div class="tablet-section">
+                    <div class="texto-lr">
+                        <h2>Aplicaciones de préstamo en Perú</h2>
                     </div>
-                    <div class="screen" id="appContainer"></div>
+                    <div class="tablet">
+                        <div class="top-bar">
+                            <div class="camera"></div>
+                            <div class="buttons">
+                                <div class="button"></div>
+                                <div class="button"></div>
+                                <div class="button"></div>
+                            </div>
+                        </div>
+                        <div class="screen" id="appContainer"></div>
+                    </div>
                 </div>
             </section>
             <!-- Modales -->
@@ -1667,7 +1675,7 @@
             html.classList.add("no-scroll")
             modalContent.innerHTML = `
             <span class="modal-close" onclick="closeModal(${index})">&times;</span>
-            <h2 class="modal-title">${app['Nombre de aplicación']}</h2>
+            <h3 class="modal-title">${app['Nombre de aplicación']}</h3>
             <div class="modal-info">
                 <p>Slogan: ${app['Slogan']}</p>
                 <p>N° de instalaciones: ${app['N° de instalaciones']}</p>
