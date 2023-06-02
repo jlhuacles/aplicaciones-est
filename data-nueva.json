@@ -1,7 +1,7 @@
 [
   {
     "Nombre de aplicación": "Alpacash-Préstamos en Perú",
-    "Slogan": "Obtén crédito personal desde tu celular y págalo en la forma que más te convenga",
+    "Descripción": "Obtén crédito personal desde tu celular y págalo en la forma que más te convenga",
     "N° de instalaciones": 653048,
     "Desarrollador": "Alpacash",
     "Pagina web del desarrollador": "https://www.drloanbl.com/",
@@ -10,11 +10,12 @@
     "Fecha de última actualización": "21/04/2023",
     "Empresa relacionada": "No se menciona",
     "Imagen": "alpacash.jpg",
-    "Nombre": "Alpacash"
+    "Nombre": "Alpacash",
+    "Estado": "Vigente"
   },
   {
     "Nombre de aplicación": "B&F Loan- Préstamos de dinero",
-    "Slogan": "Crédito fácil y bajo interes",
+    "Descripción": "Crédito fácil y bajo interes",
     "N° de instalaciones": 5811,
     "Desarrollador": "Businesses & Finance S.a.c.",
     "Pagina web del desarrollador": "http://site.bfloan.net/",
@@ -23,11 +24,12 @@
     "Fecha de última actualización": "11/01/2023",
     "Empresa relacionada": "Businesses & Finance S.A.C.",
     "Imagen": "byfloan.png",
-    "Nombre": "B&F Loan"
+    "Nombre": "B&F Loan",
+    "Estado": "Vigente"
   },
   {
     "Nombre de aplicación": "COCO Crédito-Préstamos rápido",
-    "Slogan": "Préstamos rápido",
+    "Descripción": "Préstamos rápido",
     "N° de instalaciones": 8122,
     "Desarrollador": "COCO Crédito",
     "Pagina web del desarrollador": "",
@@ -36,11 +38,12 @@
     "Fecha de última actualización": "23/03/2023",
     "Empresa relacionada": "IPESO PERU S.A.C",
     "Imagen": "cococredito.jpg",
-    "Nombre": "Coco"
+    "Nombre": "Coco",
+    "Estado": "Vigente"
   },
   {
     "Nombre de aplicación": "ConfíoCash-PE Prestamos",
-    "Slogan": "Le brinda servicios de préstamos rápidos en línea, venga y obtenga un préstamo",
+    "Descripción": "Le brinda servicios de préstamos rápidos en línea, venga y obtenga un préstamo",
     "N° de instalaciones": 13069,
     "Desarrollador": "OliverGreen",
     "Pagina web del desarrollador": "https://www.confiocashperu.com/",
@@ -49,11 +52,12 @@
     "Fecha de última actualización": "19/04/2023",
     "Empresa relacionada": "Confiotech Digital S.A.C - Empresa falsa",
     "Imagen": "confiocash.png",
-    "Nombre": "Confío Cash"
+    "Nombre": "Confío Cash",
+    "Estado": "Vigente"
   },
   {
     "Nombre de aplicación": "CoriPlata",
-    "Slogan": "CoriPlata - La mejor opción de Préstamo Personal en línea",
+    "Descripción": "CoriPlata - La mejor opción de Préstamo Personal en línea",
     "N° de instalaciones": 5049,
     "Desarrollador": "CoriPlata",
     "Pagina web del desarrollador": "https://www.coriplata.com",
@@ -62,11 +66,12 @@
     "Fecha de última actualización": "28/04/2023",
     "Empresa relacionada": "De Casa Money SAC - Empresa falsa",
     "Imagen": "coriplata.jpg",
-    "Nombre": "CoriPlata"
+    "Nombre": "CoriPlata",
+    "Estado": "Vigente"
   },
   {
     "Nombre de aplicación": "CrediSol–Préstamo de crédito",
-    "Slogan": "El préstamo personal que se adapte a ti, préstamos rápidos y seguros.",
+    "Descripción": "El préstamo personal que se adapte a ti, préstamos rápidos y seguros.",
     "N° de instalaciones": 26268,
     "Desarrollador": "perucred",
     "Pagina web del desarrollador": "https://www.credisol.pe/",
@@ -75,11 +80,12 @@
     "Fecha de última actualización": "29/03/2023",
     "Empresa relacionada": "Perucred Digital Finance SAC",
     "Imagen": "credisol.png",
-    "Nombre": "Credisol"
+    "Nombre": "Credisol",
+    "Estado": "Vigente"
   },
   {
     "Nombre de aplicación": "Don Préstamo",
-    "Slogan": "Necesitas lana? Ven al Don Préstamo!",
+    "Descripción": "Necesitas lana? Ven al Don Préstamo!",
     "N° de instalaciones": 4479,
     "Desarrollador": "FUEGO FIRE FLAME",
     "Pagina web del desarrollador": "",
@@ -88,11 +94,12 @@
     "Fecha de última actualización": "19/01/2023",
     "Empresa relacionada": "No se menciona",
     "Imagen": "don-prestamo.png",
-    "Nombre": "Don Préstamo"
+    "Nombre": "Don Préstamo",
+    "Estado": "Vigente"
   },
   {
     "Nombre de aplicación": "EkeCash–Préstamo de crédito",
-    "Slogan": "Préstamos personales de crédito inmediatos en efectivo, solicite su préstamo ya.",
+    "Descripción": "Préstamos personales de crédito inmediatos en efectivo, solicite su préstamo ya.",
     "N° de instalaciones": 179085,
     "Desarrollador": "Ekecash Préstamo",
     "Pagina web del desarrollador": "https://www.ekecash.pe/",
@@ -101,11 +108,12 @@
     "Fecha de última actualización": "26/04/2023",
     "Empresa relacionada": "Perucred Digital Finance SAC",
     "Imagen": "ekecash.png",
-    "Nombre": "Ekecash"
+    "Nombre": "Ekecash",
+    "Estado": "Vigente"
   },
   {
     "Nombre de aplicación": "Ekeko: Préstamos rápido online",
-    "Slogan": "Préstamos de dinero en línea rápido y fácil. Aprobación instantánea sin nómina.",
+    "Descripción": "Préstamos de dinero en línea rápido y fácil. Aprobación instantánea sin nómina.",
     "N° de instalaciones": 402390,
     "Desarrollador": "Ekeko Préstamo S.A",
     "Pagina web del desarrollador": "https://ekeko.site/",
@@ -114,11 +122,12 @@
     "Fecha de última actualización": "26/09/2022",
     "Empresa relacionada": "No se menciona",
     "Imagen": "ekeko.png",
-    "Nombre": "Ekeko"
+    "Nombre": "Ekeko",
+    "Estado": "Vigente"
   },
   {
     "Nombre de aplicación": "ePlata - Préstamos en línea",
-    "Slogan": "Préstamos fáciles y rápidos para pequeños créditos de personales sin buro",
+    "Descripción": "Préstamos fáciles y rápidos para pequeños créditos de personales sin buro",
     "N° de instalaciones": 37802,
     "Desarrollador": "ePlata App",
     "Pagina web del desarrollador": "https://eplata.tech",
@@ -127,11 +136,12 @@
     "Fecha de última actualización": "29/11/2022",
     "Empresa relacionada": "No se menciona",
     "Imagen": "eplata.png",
-    "Nombre": "ePlata"
+    "Nombre": "ePlata",
+    "Estado": "Vigente"
   },
   {
     "Nombre de aplicación": "Hicredito– Préstamos Personale",
-    "Slogan": "Préstamos fáciles y rápidos para pequeños créditos",
+    "Descripción": "Préstamos fáciles y rápidos para pequeños créditos",
     "N° de instalaciones": 48156,
     "Desarrollador": "Hicredito",
     "Pagina web del desarrollador": "https://www.hicredito.com/",
@@ -140,11 +150,12 @@
     "Fecha de última actualización": "06/04/2023",
     "Empresa relacionada": "HICREDITO MICROLOANS TECNOLOGIA S.A.S - Empresa falsa",
     "Imagen": "hicredito.png",
-    "Nombre": "Hicredito"
+    "Nombre": "Hicredito",
+    "Estado": "Vigente"
   },
   {
     "Nombre de aplicación": "iKori-Préstamos de Dinero",
-    "Slogan": "Créditos personales y préstamo en Perú. Aprobación al momento",
+    "Descripción": "Créditos personales y préstamo en Perú. Aprobación al momento",
     "N° de instalaciones": 401087,
     "Desarrollador": "ikori",
     "Pagina web del desarrollador": "https://ikori.cc",
@@ -153,11 +164,12 @@
     "Fecha de última actualización": "15/01/2023",
     "Empresa relacionada": "No se menciona",
     "Imagen": "ikori.png",
-    "Nombre": "iKori"
+    "Nombre": "iKori",
+    "Estado": "Vigente"
   },
   {
     "Nombre de aplicación": "Inagotables -préstamo efectivo",
-    "Slogan": "Préstamos de crédito personal, su ayuda financiera",
+    "Descripción": "Préstamos de crédito personal, su ayuda financiera",
     "N° de instalaciones": 7639,
     "Desarrollador": "JHON EDDIER ARDILA PALOMINO",
     "Pagina web del desarrollador": "https://atse.inagotablesockf.com",
@@ -166,11 +178,12 @@
     "Fecha de última actualización": "02/03/2023",
     "Empresa relacionada": "No se menciona",
     "Imagen": "inagotables.png",
-    "Nombre": "Inagotables"
+    "Nombre": "Inagotables",
+    "Estado": "Vigente"
   },
   {
     "Nombre de aplicación": "Kashin - Préstamos hasta S/800",
-    "Slogan": "Recibe prestamos y creditos confiables de inmediato.",
+    "Descripción": "Recibe prestamos y creditos confiables de inmediato.",
     "N° de instalaciones": 195740,
     "Desarrollador": "TrustTech",
     "Pagina web del desarrollador": "https://kashin.app",
@@ -179,11 +192,12 @@
     "Fecha de última actualización": "30/03/2023",
     "Empresa relacionada": "Trustek S.A.C.",
     "Imagen": "Kashin.jpg",
-    "Nombre": "Kashin"
+    "Nombre": "Kashin",
+    "Estado": "Vigente"
   },
   {
     "Nombre de aplicación": "LimaCash - Préstamo en línea",
-    "Slogan": "Préstamo en línea",
+    "Descripción": "Préstamo en línea",
     "N° de instalaciones": 49293,
     "Desarrollador": "YC GR",
     "Pagina web del desarrollador": "",
@@ -192,11 +206,12 @@
     "Fecha de última actualización": "04/04/2023",
     "Empresa relacionada": "No se menciona",
     "Imagen": "limacash.png",
-    "Nombre": "Limacash"
+    "Nombre": "Limacash",
+    "Estado": "Vigente"
   },
   {
     "Nombre de aplicación": "Magicaja–Préstamo Rápido",
-    "Slogan": "Préstamo en línea rápido y seguro",
+    "Descripción": "Préstamo en línea rápido y seguro",
     "N° de instalaciones": 5946,
     "Desarrollador": "Magicaja",
     "Pagina web del desarrollador": "https://www.magicaja.pe",
@@ -205,11 +220,12 @@
     "Fecha de última actualización": "07/04/2023",
     "Empresa relacionada": "Perucred Digital Finance SAC",
     "Imagen": "magicaja.png",
-    "Nombre": "Magicaja"
+    "Nombre": "Magicaja",
+    "Estado": "Vigente"
   },
   {
     "Nombre de aplicación": "Más Sol-Préstamo Fácil",
-    "Slogan": "Préstamos en línea sin papeleo en Perú",
+    "Descripción": "Préstamos en línea sin papeleo en Perú",
     "N° de instalaciones": 347893,
     "Desarrollador": "Más Sol S.A.C.",
     "Pagina web del desarrollador": "https://www.facilprestamope.com",
@@ -218,11 +234,12 @@
     "Fecha de última actualización": "24/04/2023",
     "Empresa relacionada": "Más Sol S.A.C. - Empresa falsa",
     "Imagen": "massol.jpg",
-    "Nombre": "Mas Sol"
+    "Nombre": "Mas Sol",
+    "Estado": "Vigente"
   },
   {
     "Nombre de aplicación": "Meti-prestamos en linea",
-    "Slogan": "Meti - préstamo en línea en Perú, rápido, eficiente y sin garantía",
+    "Descripción": "Meti - préstamo en línea en Perú, rápido, eficiente y sin garantía",
     "N° de instalaciones": 142369,
     "Desarrollador": "Meti Crédito",
     "Pagina web del desarrollador": "http://www.metiapp.com",
@@ -231,11 +248,12 @@
     "Fecha de última actualización": "28/04/2023",
     "Empresa relacionada": "BANGKOK PERU S.A.C.",
     "Imagen": "metiprestamos.png",
-    "Nombre": "Meti"
+    "Nombre": "Meti",
+    "Estado": "Vigente"
   },
   {
     "Nombre de aplicación": "Monton - préstamo en línea",
-    "Slogan": "Préstamos en línea de Perú, seguro, sin garantía",
+    "Descripción": "Préstamos en línea de Perú, seguro, sin garantía",
     "N° de instalaciones": 12515,
     "Desarrollador": "CORTES GARZON DILIA ALEXANDRA",
     "Pagina web del desarrollador": "https://mmi.montonstprz.com",
@@ -244,11 +262,12 @@
     "Fecha de última actualización": "20/02/2023",
     "Empresa relacionada": "No se menciona",
     "Imagen": "monton.png",
-    "Nombre": "Monton"
+    "Nombre": "Monton",
+    "Estado": "Vigente"
   },
   {
     "Nombre de aplicación": "Peruprésta",
-    "Slogan": "aprobación rapida, deposito inmediato",
+    "Descripción": "aprobación rapida, deposito inmediato",
     "N° de instalaciones": 1512,
     "Desarrollador": "HDAXIONGE",
     "Pagina web del desarrollador": "https://www.perupresta.com/",
@@ -257,11 +276,12 @@
     "Fecha de última actualización": "12/04/2023",
     "Empresa relacionada": "Plus Cosmética S.A",
     "Imagen": "perupresta.png",
-    "Nombre": "Perupresta"
+    "Nombre": "Perupresta",
+    "Estado": "Vigente"
   },
   {
     "Nombre de aplicación": "Prestasoles - Préstamos rápido",
-    "Slogan": "Préstamos rápido",
+    "Descripción": "Préstamos rápido",
     "N° de instalaciones": 248047,
     "Desarrollador": "YC GR",
     "Pagina web del desarrollador": "",
@@ -270,11 +290,12 @@
     "Fecha de última actualización": "29/03/2023",
     "Empresa relacionada": "No se menciona",
     "Imagen": "prestasoles.png",
-    "Nombre": "PrestaSoles"
+    "Nombre": "PrestaSoles",
+    "Estado": "Vigente"
   },
   {
     "Nombre de aplicación": "Préstamos de dinero-Rapipeso",
-    "Slogan": "prestamos de credito,prestamos,prestamos en linea,cash,prestamos rapido,dinero",
+    "Descripción": "prestamos de credito,prestamos,prestamos en linea,cash,prestamos rapido,dinero",
     "N° de instalaciones": 5058,
     "Desarrollador": "rapi peso",
     "Pagina web del desarrollador": "https://www.rapipesope.com",
@@ -283,11 +304,12 @@
     "Fecha de última actualización": "15/11/2022",
     "Empresa relacionada": "No se menciona",
     "Imagen": "rapipeso.png",
-    "Nombre": "Rapi Peso"
+    "Nombre": "Rapi Peso",
+    "Estado": "Vigente"
   },
   {
     "Nombre de aplicación": "SoleWaka : Préstamos Rápidos",
-    "Slogan": "SoleWaka ofrece préstamos en efectivo en cualquier momento y en cualquier lugar",
+    "Descripción": "SoleWaka ofrece préstamos en efectivo en cualquier momento y en cualquier lugar",
     "N° de instalaciones": 6446,
     "Desarrollador": "SoleWaka",
     "Pagina web del desarrollador": "https://www.solewaka.live",
@@ -296,11 +318,12 @@
     "Fecha de última actualización": "28/03/2023",
     "Empresa relacionada": "No se menciona",
     "Imagen": "solewaka.png",
-    "Nombre": "SoleWaka"
+    "Nombre": "SoleWaka",
+    "Estado": "Vigente"
   },
   {
     "Nombre de aplicación": "Sol PE-conseguir dinero rapido",
-    "Slogan": "Sol PE ofrece préstamos personales en efectivo a bajo interés.",
+    "Descripción": "Sol PE ofrece préstamos personales en efectivo a bajo interés.",
     "N° de instalaciones": 9405,
     "Desarrollador": "SOL Box",
     "Pagina web del desarrollador": "",
@@ -309,11 +332,12 @@
     "Fecha de última actualización": "25/04/2023",
     "Empresa relacionada": "No se menciona",
     "Imagen": "solpe.png",
-    "Nombre": "Sol PE"
+    "Nombre": "Sol PE",
+    "Estado": "Vigente"
   },
   {
     "Nombre de aplicación": "SolyaCash-Préstamo de crédito",
-    "Slogan": "Crédito Préstamos Perú : En linea, Efectivo, Seguro",
+    "Descripción": "Crédito Préstamos Perú : En linea, Efectivo, Seguro",
     "N° de instalaciones": 36740,
     "Desarrollador": "SolyaCash",
     "Pagina web del desarrollador": "https://www.solyacash.com",
@@ -322,11 +346,12 @@
     "Fecha de última actualización": "18/04/2023",
     "Empresa relacionada": "No se menciona",
     "Imagen": "solyacash.png",
-    "Nombre": "Solya Cash"
+    "Nombre": "Solya Cash",
+    "Estado": "Vigente"
   },
   {
     "Nombre de aplicación": "SúperCredito Préstamo en Perú",
-    "Slogan": "Un credito confiable al alcance de todos. ¡Que el buró no te detenga!",
+    "Descripción": "Un credito confiable al alcance de todos. ¡Que el buró no te detenga!",
     "N° de instalaciones": 45321,
     "Desarrollador": "SúperCredito Préstamo S.A.",
     "Pagina web del desarrollador": "https://www.supercreditope.com",
@@ -335,11 +360,12 @@
     "Fecha de última actualización": "09/03/2023",
     "Empresa relacionada": "SúperCredito Préstamo S.A.",
     "Imagen": "supercredito.png",
-    "Nombre": "Súper Crédito"
+    "Nombre": "Súper Crédito",
+    "Estado": "Vigente"
   },
   {
     "Nombre de aplicación": "takay-prestamos en linea",
-    "Slogan": "takay-préstamo en línea en Perú, rápido, eficiente y sin garantía",
+    "Descripción": "takay-préstamo en línea en Perú, rápido, eficiente y sin garantía",
     "N° de instalaciones": 31534,
     "Desarrollador": "takayapp",
     "Pagina web del desarrollador": "http://www.takayapp.com",
@@ -348,11 +374,12 @@
     "Fecha de última actualización": "27/04/2023",
     "Empresa relacionada": "Finbeneficio Peru S.A.C.",
     "Imagen": "takay.png",
-    "Nombre": "Takay"
+    "Nombre": "Takay",
+    "Estado": "Vigente"
   },
   {
     "Nombre de aplicación": "Vamo Cash: Préstamos en Línea",
-    "Slogan": "Préstamos de dinero en línea rápido y fácil. Aprobación instantánea sin nómina",
+    "Descripción": "Préstamos de dinero en línea rápido y fácil. Aprobación instantánea sin nómina",
     "N° de instalaciones": 106635,
     "Desarrollador": "Vamo Cash",
     "Pagina web del desarrollador": "https://vamocash.com/",
@@ -361,11 +388,12 @@
     "Fecha de última actualización": "14/10/2022",
     "Empresa relacionada": "No se menciona",
     "Imagen": "vamocash.png",
-    "Nombre": "Vamo Cash"
+    "Nombre": "Vamo Cash",
+    "Estado": "Vigente"
   },
   {
     "Nombre de aplicación": "Viva Crédito-Préstamo Rápido",
-    "Slogan": "Préstamo personal rápido y seguro en Perú",
+    "Descripción": "Préstamo personal rápido y seguro en Perú",
     "N° de instalaciones": 627782,
     "Desarrollador": "Viva Crédito",
     "Pagina web del desarrollador": "https://www.carteraprestamo.com",
@@ -374,11 +402,12 @@
     "Fecha de última actualización": "22/03/2023",
     "Empresa relacionada": "GRUPO COMPETIDORES PERU S.A.C.",
     "Imagen": "vivacredito.png",
-    "Nombre": "Viva Crédito"
+    "Nombre": "Viva Crédito",
+    "Estado": "Vigente"
   },
   {
     "Nombre de aplicación": "YaCredito-Préstamos rápido",
-    "Slogan": "Préstamos de dinero rápido seguro práctico simple fácil en línea en línea",
+    "Descripción": "Préstamos de dinero rápido seguro práctico simple fácil en línea en línea",
     "N° de instalaciones": 50207,
     "Desarrollador": "YaCredito",
     "Pagina web del desarrollador": "https://www.yacredito.com/",
@@ -387,11 +416,12 @@
     "Fecha de última actualización": "27/03/2023",
     "Empresa relacionada": "CB FINTECH S.A.C.",
     "Imagen": "yacredito.png",
-    "Nombre": "Ya Credito"
+    "Nombre": "Ya Credito",
+    "Estado": "Vigente"
   },
   {
     "Nombre de aplicación": "ZooPrestamos -Credito en línea",
-    "Slogan": "Personales Préstamos en Créditos y Dinero, desde tu celular. Aprobación Rápido",
+    "Descripción": "Personales Préstamos en Créditos y Dinero, desde tu celular. Aprobación Rápido",
     "N° de instalaciones": 16354,
     "Desarrollador": "zooprestamos",
     "Pagina web del desarrollador": "https://zooprestamos.com",
@@ -400,6 +430,21 @@
     "Fecha de última actualización": "25/04/2023",
     "Empresa relacionada": "XINTAI PERU S.A.C",
     "Imagen": "zooprestamos.png",
-    "Nombre": "Zooprestamos"
+    "Nombre": "Zooprestamos",
+    "Estado": "Vigente"
+  },
+  {
+    "Nombre de aplicación": "Solcash",
+    "Descripción": "Préstamo personales online en Perú, crédito de dinero al momento",
+    "N° de instalaciones": 50000,
+    "Desarrollador": "Solcash",
+    "Pagina web del desarrollador": "https://solcash.cc/home",
+    "Política de privacidad": "https://solcash.cc/privacy-policy",
+    "Fecha de lanzamiento": "",
+    "Fecha de última actualización": "30/01/2023",
+    "Empresa relacionada": "IPESO PERU S.A.C",
+    "Imagen": "solcash.jpg",
+    "Nombre": "Solcash",
+    "Estado": "Eliminado"
   }
 ]

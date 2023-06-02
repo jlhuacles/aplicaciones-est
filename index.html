@@ -66,13 +66,14 @@
 <body>
     <style type="text/css">
         @import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
+        @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600;700&family=DM+Sans&display=swap');
 
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             color: #212529;
-            font-family: sans-serif;
+
         }
 
         html {
@@ -169,10 +170,14 @@
         }
 
         h1 {
-            font-size: 5rem;
+            font-size: 60px;
             line-height: 1.3;
             margin-bottom: 2rem;
+            font-family: 'Crimson Text', serif !important;
+            max-width: 750px;
+            font-weight: 700;
         }
+
 
         .bajada {
             font-size: 2rem;
@@ -206,17 +211,12 @@
             bottom: 4px;
         }
 
-        .texto-lr {
-            font-size: 11pt;
-            font-weight: 400;
-            text-align: left;
-            font-family: Arial, sans-serif;
-        }
+
 
         .texto-lr,
         h1,
         .bajada {
-            font-family: sans-serif;
+
             width: 100%;
             margin: 10px 0;
         }
@@ -228,9 +228,13 @@
             width: 100%;
         }
 
-        h1 {
-            max-width: 750px;
+        .texto-lr {
+            font-size: 11pt;
+            font-weight: 400;
+            text-align: left;
+            font-family: 'DM Sans', sans-serif;
         }
+
 
         .bajada {
             max-width: 750px;
@@ -290,7 +294,7 @@
 
             .hero-image .w-img {
                 position: initial;
-                padding-top: 40%;
+                padding-top: 20%;
             }
 
             .w-text h1 {
@@ -302,6 +306,7 @@
                 padding: 5px !important;
                 font-size: 9pt;
             }
+
         }
 
         span a.btn-fb,
@@ -342,10 +347,6 @@
         }
     </style>
     <style>
-        h1 {
-            font-size: 50px;
-        }
-
         .headline {
             font-weight: 100;
         }
@@ -1006,7 +1007,7 @@
             }
 
             /* style for comments text */
-          
+
 
         }
     </style>
@@ -1097,9 +1098,12 @@
             cursor: pointer;
         }
 
+
+
         .app-icon img {
             max-width: 100%;
             max-height: 100%;
+            border-radius: 5px;
         }
 
         .app-icon span {
@@ -1117,28 +1121,32 @@
             width: 100%;
             height: 100%;
             overflow: auto;
-            background-color: rgba(0, 0, 0, 0.8);
 
+
+        }
+
+        .filter-modal {
+            filter: invert(0%) sepia(8%) saturate(0%) hue-rotate(96deg) brightness(99%) contrast(107%);
         }
 
         .modal-content {
             background-color: #fff;
             /* margin: 50vh auto; */
             /* padding: 20px; */
-            max-width: 500px;
+            max-width: 675px;
             border-radius: 5px;
             position: relative;
             top: 40vh;
             margin-left: auto;
             margin-right: auto;
             height: auto;
-            border: 4px solid #036a93;
+            padding-bottom: 20px;
             font-size: 16px;
+            border: 1px solid #036a93;
+            font-family: 'DM Sans', sans-serif;
         }
 
-        .modal-close {
-           
-        }
+        .modal-close {}
 
         .modal-title {
             font-size: 20px;
@@ -1146,19 +1154,17 @@
             margin-bottom: 10px;
             color: #fff;
             background-color: #036a93;
-            padding: 3px;
+            padding: 10px 20px;
+            text-transform: uppercase;
         }
 
-        .modal-info {
-            margin-bottom: 10px;
-            margin: 13px;
-        }
+
 
         .modal-close {
             color: #fff;
             font-size: 28px;
             font-weight: bold;
-            
+
             position: absolute;
             top: 10px;
             right: 10px;
@@ -1178,6 +1184,85 @@
             /* Debe tener altura específica para que funcione */
             max-height: 100vh;
             overflow: hidden;
+        }
+
+        .parent-superior {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: 1fr;
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .parent-superior-title {
+            grid-area: 1 / 1 / 2 / 2;
+        }
+
+        .parent-superior-image {
+            grid-area: 1 / 2 / 2 / 3;
+        }
+
+        .parent-superior-title--instalaciones{
+            border-top: 1px dotted #036a93;
+            border-bottom: 1px dotted #036a93;
+            width: 50%;
+            color: #036a93;
+            display: flex;
+            gap: 10px;
+        }
+
+        .parent-superior-title--instalaciones span{
+            font-size: 32px;
+            color: #036a93;
+        }
+
+
+
+        /* grid modal-info */
+        .parent {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 2fr repeat(3, 1fr);
+            grid-column-gap: 5px;
+            grid-row-gap: 5px;
+            margin-bottom: 5px;
+            padding: 5px 20px;
+
+        }
+
+        .div1 {
+            grid-area: 1 / 1 / 2 / 3;
+        }
+
+        .div2 {
+            grid-area: 2 / 1 / 3 / 2;
+        }
+
+        .div3 {
+            grid-area: 2 / 2 / 3 / 3;
+        }
+
+        .div4 {
+            grid-area: 3 / 1 / 4 / 2;
+        }
+
+        .div5 {
+            grid-area: 3 / 2 / 4 / 3;
+        }
+
+        .div6 {
+            grid-area: 4 / 1 / 5 / 2;
+        }
+
+        .div7 {
+            grid-area: 4 / 2 / 5 / 3;
+        }
+
+        @media (max-width: 768px) {
+            .app-icon {
+                width: 85px;
+            }
         }
     </style>
     <header id="w-header">
@@ -1282,8 +1367,8 @@
 
             <div id="content" style="margin-top: 0px;">
                 <div class="texto-lr">
-                    <h5 class="legend">Por: Gloria Purizaca</h5>
-                    <h5 class="legend line">Publicado el 28 de abril de 2023</h5>
+                    <h5 class="legend">Por: Pamela Huerta</h5>
+                    <h5 class="legend line">Publicado el 4 de junio de 2023</h5>
                     <br>
                     <p>No hay día en que las <span class="bold"> mujeres</span> no sean víctimas de algún tipo de
                         violencia. A
@@ -1320,7 +1405,7 @@
                             Saavedra, Guillermo Aguirre Tucto, Elmer Yoner Eguizabal Cruz y Carlos Sosimo Garcia
                             Cantaro</span>.
                         De este grupo, cinco pertenecen a regiones.</p>
-                    <div class="flourish-embed" data-src="visualisation/13542575">
+                    <div class="flourish-embed flourish-table" data-src="visualisation/13686328">
                         <script src="https://public.flourish.studio/resources/embed.js"></script>
                     </div>
                     <p>Si bien este programa cuenta con la Comisión Evaluadora de Recompensas contra la Criminalidad
@@ -1454,8 +1539,8 @@
     <footer style="background-color: #f0f0f0">
         <div class="w-1000">
 
-            <span><strong>Texto:</strong> Gloria Purizaca</span>
-            <span><strong>Desarrollo Web:</strong> Anna Absi y José Luis Huacles</span>
+            <span><strong>Texto:</strong> Pamela Huerta</span>
+            <span><strong>Desarrollo Web:</strong> José Luis Huacles</span>
             <span><strong>Coordinación:</strong> Milagros Requena</span>
 
             <br />
@@ -1660,7 +1745,7 @@
             // Crear el modal y agregar el contenido
             let modal = document.createElement("div");
             modal.classList.add("modal");
-
+            appContainer.classList.add("filter-modal");
             modal.id = "modal" + index;
             modal.appendChild(modalContent);
             modal.style.display = "block"
@@ -1676,15 +1761,28 @@
             modalContent.innerHTML = `
             <span class="modal-close" onclick="closeModal(${index})">&times;</span>
             <h3 class="modal-title">${app['Nombre de aplicación']}</h3>
-            <div class="modal-info">
-                <p>Slogan: ${app['Slogan']}</p>
-                <p>N° de instalaciones: ${app['N° de instalaciones']}</p>
-                <p>Desarrollador: ${app['Desarrollador']}</p>
-                <p>Página web del desarrollador: ${app['Pagina web del desarrollador']}</p>
-                <p>Política de privacidad: ${app['Política de privacidad']}</p>
-                <p>Fecha de lanzamiento: ${app['Fecha de lanzamiento']}</p>
-                <p>Fecha de última actualización: ${app['Fecha de última actualización']}</p>
-                <p>Empresa relacionada: ${app['Empresa relacionada']}</p>
+            <div class="parent">
+                <div class="div1">
+                    <div class="parent-superior">
+                        <div class="parent-superior-title"
+                        <p>Descripción: ${app['Descripción']}</p>
+                        <p class="parent-superior-title--instalaciones">
+                            <span>${app['N° de instalaciones']}</span>
+                            N° de instalaciones
+                        </p> 
+
+                        </div>
+                        <div class="parent-superior-imagen">
+                            <img style="width: 100px;height:100px" src="images/${app["Imagen"]}"/>
+                        </div>
+                    </div>    
+                </div>
+                <div class="div2"><p>Desarrollador: ${app['Desarrollador']}</p> </div>
+                <div class="div3"> <p>Página web del desarrollador: ${app['Pagina web del desarrollador']}</p></div>
+                <div class="div4"><p>Fecha de lanzamiento: ${app['Fecha de lanzamiento']}</p> </div>
+                <div class="div5"> <p>Fecha de última actualización: ${app['Fecha de última actualización']}</p></div>
+                <div class="div6"> <p>Empresa relacionada: ${app['Empresa relacionada']}</p></div>
+                <div class="div7"> <p> Estado: ${app['Estado']}</p></div>
             </div>`;
 
             return modalContent;
@@ -1694,6 +1792,7 @@
             let modalContainer = document.getElementById("modalContainer");
             let modal = document.getElementById("modal" + index);
             html.classList.remove("no-scroll")
+            appContainer.classList.remove("filter-modal")
             modalContainer.removeChild(modal);
         }
     </script>
