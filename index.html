@@ -119,7 +119,7 @@
             top: 0;
             left: 0;
             width: 100%;
-            z-index: 2;
+            z-index: 999;
             transition: all 0.5s ease;
             padding: 15px 42px;
             background: black;
@@ -1118,7 +1118,7 @@
             /* display: none; */
             /* Ocultar el modal por defecto */
             position: fixed;
-            z-index: 9999;
+            z-index: 500;
             left: 0;
             top: 0;
             width: 100%;
@@ -1317,25 +1317,30 @@
             height: 70vh;
             top: 40px;
             left: 15px;
-            z-index: 1;
+            z-index: 3;
             margin: auto;
             padding: 10px;
             background-color: transparent;
             text-align: left;
             justify-content: start;
             align-items: start;
-            
+
             border-radius: 5px;
             pointer-events: none;
             overflow: scroll;
             color: white;
 
+
+        }
+
+        #tooltip::-webkit-scrollbar {
+            display: none;
         }
 
         .item {
 
-           
-            
+
+
             background-color: #ececec;
             border-radius: 1px;
             transition: all 0.5s ease-out;
@@ -1390,11 +1395,12 @@
             font-weight: bold;
             text-transform: uppercase;
         }
+
         /* color para el humanito */
         .fa-user {
-            font-size: 0.82vw;
-            color: transparent;   
-            background-color:transparent;
+            font-size: 0.81vw;
+            color: red;
+            background-color: transparent;
         }
 
         .item-seleccionado {
@@ -1416,28 +1422,34 @@
             height: calc(100vh - 70px);
         }
 
-        .text-viz{
+        .text-viz {
             bottom: 50px;
             right: 25px;
             position: absolute;
-            width: 30%;
+            width: 40%;
             color: black;
-            
+            background-color: transparent;
+            z-index: 222;
+
         }
-        .user{
+
+        .user {
             font-size: 15px;
         }
 
-        .user-comment{
+        .user-comment {
             font-size: 35px;
+            display: inline;
             background-color: black;
-            display: inline-block;
         }
 
-        .user-comment::after{
+        
+
+        .user-comment::after {
             content: '"'
         }
-        .user-comment::before{
+
+        .user-comment::before {
             content: '"'
         }
 
@@ -1463,6 +1475,26 @@
                 height: 485px;
             }
 
+        }
+
+        @media(max-width:500px){
+            .user-comment {
+            font-size: 16px;
+            background-color: black;
+            display: inline-block;
+            
+        }
+
+        .text-viz{
+            right: 25%;
+            z-index:333;
+            color: white;
+        }
+
+        .fa-user{
+            font-size: 1vw;
+            line-height: 1;
+        }
         }
     </style>
     <header id="w-header">
@@ -1562,11 +1594,12 @@
                 </div>
             </section>
             <section id="h-section">
-                
+
                 <div id="container">
                     <div class="text-viz">
                         <div class="number titulo-viz">7082 quejas</div>
-                        <div class="titulo-viz"> De personan en Google Play Store narran la lucha infructuosa de los estafados por préstamos personales.
+                        <div class="titulo-viz"> De personan en Google Play Store narran la lucha infructuosa de los
+                            estafados por préstamos personales.
                         </div>
                     </div>
                     <div id="tooltip" class="tooltip-hide"></div>
@@ -2079,8 +2112,8 @@
             // Mostramos el comentario al hacer hover sobre el icono
             icons.on(eventIn, function (event, d) {
                 d3.select("#tooltip")
-                    .html('<span class="user-comment">' +d.Comentario +"</span>"+ '<span class="user">' + d.Usuario + ". " +d.fecha+ "</span>")
-                        // + '<br>Puntuado con: ' + d.Score + '★'
+                    .html('<span class="user-comment">' + d.Comentario + "</span>" + '<span class="user">' + d.Usuario + ". " + d.fecha + "</span>")
+                    // + '<br>Puntuado con: ' + d.Score + '★'
                     .attr("class", "tooltip-show");
 
             })
