@@ -236,7 +236,7 @@
             font-weight: 400;
             text-align: left;
             font-family: 'DM Sans', sans-serif;
-            padding-top: 15px;
+            padding-top: 25px;
         }
 
 
@@ -249,7 +249,7 @@
             max-width: 750px;
             margin: 0 auto;
             padding-bottom: 15px;
-            line-height: 1.8;
+            line-height: 1.7;
             display: block;
             font-size: 16px;
         }
@@ -260,8 +260,8 @@
             }
 
             .texto-lr {
-                margin: 0 auto 20px;
-                padding: 0 15px;
+                margin: 0 auto 1px;
+                padding: 20px 15px 0px 15px;
             }
 
             h1 {
@@ -1052,6 +1052,7 @@
             /* Añadir espacio entre la barra y la pantalla */
             padding: 5px;
             background-color: #333;
+            justify-content: space-between;
         }
 
         .tablet .top-bar .camera {
@@ -1356,7 +1357,7 @@
 
         .item:hover {
             color: white !important;
-            background-color: red;
+            background-color: none;
         }
 
 
@@ -1388,7 +1389,7 @@
         #container {
             max-width: 100%;
             /* height: 100vh; */
-            margin: 0 auto 25px;
+            /* margin: 0 auto 25px; */
             display: block;
             box-sizing: border-box;
             overflow-x: scroll;
@@ -1406,7 +1407,7 @@
         /* color para el humanito */
         .fa-user {
             font-size: 0.81vw;
-            color: red;
+            color: #677784;
             background-color: transparent;
         }
 
@@ -1428,7 +1429,7 @@
         #h-section {
             /* height: 100vh; */
             background-image: url("./fondo-oscuro1.png");
-            padding: 25px 0px;
+            padding: 0px 0px 40px 0px;
             background-repeat: no-repeat;
             background-size: cover;
         }
@@ -1440,13 +1441,9 @@
         }
 
         .text-viz {
-            bottom: 50px;
-            right: 25px;
-            position: absolute;
-            width: 40%;
-            color: black;
-            background-color: transparent;
-            z-index: 222;
+            border: 3px solid #036a93;
+
+
 
         }
 
@@ -1487,13 +1484,14 @@
             height: 300px;
             position: relative;
             border: 5px solid #036a93;
+            margin-bottom: 15px;
         }
 
         .slide-container {
             width: 100%;
             height: 100%;
             overflow: hidden;
-            
+
         }
 
         .slide {
@@ -1513,11 +1511,13 @@
             padding: 5px 10px;
             color: #fff
         }
-        .slide-content{
+
+        .slide-content {
             font-size: 16px;
             padding: 5px 10px;
             line-height: normal;
         }
+
         .slide.active {
             opacity: 1;
         }
@@ -1529,6 +1529,7 @@
             transform: translateX(-50%);
             display: flex;
             justify-content: center;
+            z-index: 3;
         }
 
         .slide-navigation span {
@@ -1547,6 +1548,36 @@
 
         }
 
+        .slide-future {
+            z-index: 2;
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 5px;
+            font-size: 25px;
+
+        }
+
+        .slide-future--next {
+            cursor: pointer;
+            color: #677784;
+        }
+
+        .slide-future--next:hover {
+            color: #036a93;
+        }
+
+        .slide-future--prev {
+            cursor: pointer;
+            color: #677784;
+        }
+
+        .slide-future--prev:hover {
+            color: #036a93;
+        }
 
 
         @media (max-width: 768px) {
@@ -1567,12 +1598,18 @@
                 grid-row-gap: 0px;
             }
 
+            .tablet {
+                max-width: 95%;
+            }
+
             .tablet .screen {
                 height: 485px;
             }
-            .principal-comment{
+
+            .principal-comment {
                 height: 450px;
             }
+
 
         }
 
@@ -1584,15 +1621,25 @@
 
             }
 
-            .text-viz {
-                right: 25%;
-                z-index: 333;
-                color: white;
-            }
+
 
             .fa-user {
                 font-size: 1vw;
                 line-height: 1;
+            }
+
+            .tablet {
+                flex-direction: column;
+            }
+
+            .tablet .top-bar {
+                height: 40px;
+                width: 100%;
+                flex-direction: row;
+            }
+
+            .tablet .top-bar .buttons {
+                flex-direction: row;
             }
         }
     </style>
@@ -1680,7 +1727,7 @@
 
             <div id="content" style="margin-top: 0px;">
                 <div class="texto-lr">
-                    <h5 class="legend">Por: Pamela Huerta</h5>
+                    <h5 class="legend">Por: Pamela Huerta Bustamante y José Luis Huacles Unocc</h5>
                     <h5 class="legend line">Publicado el 4 de junio de 2023</h5>
                     <br>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -1756,15 +1803,22 @@
                         no gubernamentales o de la misma sociedad civil.
                     </p>
                 </div>
+
+                <div class="texto-lr text-viz">
+                    <div class="number titulo-viz">7082 quejas</div>
+                    <div class="titulo-viz"> De personan en Google Play Store narran la lucha infructuosa de los
+                        estafados por préstamos personales.
+                    </div>
+                    <div class="titulo-viz">
+                        <i class="fa fa-user item"> </i><span>= Una queja/denuncia de una persona en los comentarios de
+                            las aplicaciones </span>
+                    </div>
+                </div>
+
                 <section id="g-section">
 
                     <div id="container">
-                        <div class="text-viz">
-                            <div class="number titulo-viz">7082 quejas</div>
-                            <div class="titulo-viz"> De personan en Google Play Store narran la lucha infructuosa de los
-                                estafados por préstamos personales.
-                            </div>
-                        </div>
+
                         <div id="tooltip" class="tooltip-hide"></div>
                     </div>
 
@@ -1804,7 +1858,10 @@
                         sea agregado nuevamente en la plataforma el 18 de mayo del 2021.</p>
 
                     <div class="principal-comment">
-
+                        <div class="slide-future">
+                            <span class="slide-future--prev" onclick="prevSlide()"> &#60;</span>
+                            <span class="slide-future--next" onclick="nextSlide()"> &#62;</span>
+                        </div>
                         <div class="slide-container">
                             <div class="slide">
                                 <div class="slide-title">Slide navigation</div>
@@ -1857,7 +1914,10 @@
                                     iaculis erat volutpat. Aliquam id tempus lectus.</div>
                             </div>
                         </div>
-                        <div class="slide-navigation"></div>
+
+                        <div class="slide-navigation">
+
+                        </div>
                     </div>
 
 
@@ -2264,33 +2324,48 @@
 
 
         d3.json("data.json").then(function (data) {
+            // Verificamos si la pantalla tiene un ancho menor a 499 y es un dispositivo móvil
+            let isMobile = window.innerWidth < 499 && /Mobi/i.test(navigator.userAgent);
+
             // Creamos un i por cada objeto en el array "data"
-            var icons = d3.select("#container")
+            let icons = d3.select("#container")
                 .selectAll("i")
                 .data(data.data)
                 .enter()
                 .append("i")
-                .attr("class", "fa fa-user item")
+                .attr("class", "fa fa-user item");
 
-            var isMobile = window.innerWidth < 499 && /Mobi/i.test(navigator.userAgent);
-            var eventIn = isMobile ? "touchstart" : "mouseover";
-            var eventOut = isMobile ? "touchend" : "mouseout"
-            // Mostramos el comentario al hacer hover sobre el icono
-            icons.on(eventIn, function (event, d) {
+            // Función para mostrar el tooltip
+            function showTooltip(d) {
                 d3.select("#tooltip")
                     .html('<span class="user-comment">' + d.Comentario + "</span>" + '<span class="user">' + d.Usuario + ". " + d.fecha + "</span>")
-                    // + '<br>Puntuado con: ' + d.Score + '★'
                     .attr("class", "tooltip-show");
+            }
 
-            })
-
-            // Ocultamos el comentario al quitar el cursor del icono
-            icons.on(eventOut, function (event, d) {
+            // Función para ocultar el tooltip
+            function hideTooltip() {
                 d3.select("#tooltip").attr("class", "tooltip-hide");
+            }
 
-            });
+            if (isMobile) {
+                let currentIndex = 0;
+                showTooltip(data.data[currentIndex]);
 
+                // Cambiar el comentario cada 5 segundos
+                setInterval(function () {
+                    currentIndex = (currentIndex + 1) % data.data.length;
+                    showTooltip(data.data[currentIndex]);
+                }, 5000);
+            } else {
+                icons.on("mouseover", function (event, d) {
+                    showTooltip(d);
+                });
 
+                // Ocultamos el comentario al quitar el cursor del icono en versiones no móviles
+                icons.on("mouseout", function (event, d) {
+                    hideTooltip();
+                });
+            }
         });
 
     </script>
@@ -2305,6 +2380,7 @@
             span.addEventListener('click', () => changeSlide(index));
             slideNavigation.appendChild(span);
         });
+
 
         // Mostrar la diapositiva inicial
         slides[currentSlide].classList.add('active');
@@ -2328,6 +2404,14 @@
             let nextSlideIndex = currentSlide + 1;
             if (nextSlideIndex >= slides.length) {
                 nextSlideIndex = 0;
+            }
+            changeSlide(nextSlideIndex);
+        }
+
+        function prevSlide() {
+            let nextSlideIndex = currentSlide - 1;
+            if (nextSlideIndex == -1) {
+                nextSlideIndex = slides.length - 1;
             }
             changeSlide(nextSlideIndex);
         }
