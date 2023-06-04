@@ -2331,26 +2331,17 @@
 
 
         d3.json("data.json").then(function (data) {
-        var itemCount = 7802; // Número total de elementos item
-        var displayedComments = []; // Comentarios que se han mostrado
-        var currentIndex = 0; // Índice actual en displayedComments
-
         // Verificamos si la pantalla tiene un ancho menor a 499 y es un dispositivo móvil
         var isMobile = window.innerWidth < 499 && /Mobi/i.test(navigator.userAgent);
 
-        // Obtener un comentario aleatorio que no se haya mostrado antes
-        function getRandomComment() {
-          var randomIndex = Math.floor(Math.random() * data.data.length);
-          var comment = data.data[randomIndex];
-          if (displayedComments.includes(comment)) {
-            // Si el comentario ya se ha mostrado, buscar otro
-            return getRandomComment();
-          } else {
-            // Agregar el comentario a los mostrados y devolverlo
-            displayedComments.push(comment);
-            return comment;
-          }
-        }
+        // Creamos un i por cada objeto en el array "data"
+        var icons = d3
+          .select("#container")
+          .selectAll("i")
+          .data(data.data)
+          .enter()
+          .append("i")
+          .attr("class", "fa fa-user item");
 
         // Función para mostrar el tooltip
         function showTooltip(d) {
@@ -2364,49 +2355,31 @@
           d3.select("#tooltip").attr("class", "tooltip-hide");
         }
 
+        // Mostramos el primer comentario por defecto
+        showTooltip(data.data[0]);
+
         if (isMobile) {
-          // Cambiar el tooltip cada 5 segundos en dispositivos móviles
-          var interval = setInterval(function () {
-            // Obtener un comentario aleatorio que no se haya mostrado antes
-            var comment = getRandomComment();
-
-            // Mostrar el comentario y seleccionar el elemento item correspondiente
-            showTooltip(comment);
-            d3.select("#container")
-              .selectAll(".item")
-              .filter(function (d) {
-                return d === comment;
-              })
-              .classed("selected", true);
-
-            // Eliminar la selección después de 1 segundo
-            setTimeout(function () {
-              d3.select("#container").selectAll(".item").classed("selected", false);
-            }, 1000);
-
-            // Verificar si se han mostrado todos los comentarios
-            if (displayedComments.length === itemCount) {
-              clearInterval(interval); // Detener el intervalo
-            }
+          // Cambio automático de tooltips cada 5 segundos en dispositivos móviles
+          var currentIndex = 0;
+          setInterval(function () {
+            var currentData = data.data[currentIndex];
+            showTooltip(currentData);
+            currentIndex = (currentIndex + 1) % data.data.length;
           }, 5000);
         } else {
           // Mostramos el comentario al hacer hover sobre el icono en versiones no móviles
-          var icons = d3
-            .select("#container")
-            .selectAll("i")
-            .data(data.data.slice(0, itemCount))
-            .enter()
-            .append("i")
-            .attr("class", "fa fa-user item")
-            .on("mouseover", function (event, d) {
-              showTooltip(d);
-            })
-            .on("mouseout", function (event, d) {
-              hideTooltip();
-            });
+          icons.on("mouseover", function (event, d) {
+            d3.select(this).attr("class", "fa fa-user item item-hover");
+            showTooltip(d);
+          });
+
+          // Ocultamos el comentario y restauramos el estilo al quitar el cursor del icono en versiones no móviles
+          icons.on("mouseout", function (event, d) {
+            d3.select(this).attr("class", "fa fa-user item");
+            hideTooltip();
+          });
         }
       });
-
     </script>
     <script>
         const slides = document.querySelectorAll('.slide');
