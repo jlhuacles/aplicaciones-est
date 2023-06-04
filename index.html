@@ -173,12 +173,19 @@
         }
 
         h1 {
-            font-size: 60px;
+            font-size: 25px;
             line-height: 1.3;
             margin-bottom: 2rem;
             font-family: 'Crimson Text', serif !important;
             max-width: 750px;
             font-weight: 700;
+        }
+
+        h1 span {
+            background: linear-gradient(to right,
+                    rgba(0, 0, 0, 0.5508404045211834) 63%,
+                    transparent);
+            font-size: 60px;
         }
 
 
@@ -190,7 +197,7 @@
 
         h2 {
             font-size: 2.2rem;
-            font-family: sans-serif;
+            font-family: 'DM Sans', sans-serif;
             width: 100%;
             /* margin: -110px auto 25px; */
             /* padding-top: 120px; */
@@ -1435,14 +1442,15 @@
         }
 
         #g-section {
-            height: 100vh;
+            /* height: 100vh; */
 
             padding: 25px 0px;
         }
 
         .text-viz {
             border: 3px solid #036a93;
-
+            padding-right: 15px;
+            padding-left: 15px;
 
 
         }
@@ -1565,8 +1573,9 @@
             cursor: pointer;
             color: #677784;
         }
-        .slide-future--next::selection{
-            background:transparent;
+
+        .slide-future--next::selection {
+            background: transparent;
         }
 
 
@@ -1579,14 +1588,30 @@
             color: #677784;
         }
 
-        .slide-future--prev::selection{
-            background:transparent;
+        .slide-future--prev::selection {
+            background: transparent;
         }
 
         .slide-future--prev:hover {
             color: #036a93;
         }
 
+        .comment-red {
+            color: #036a93;
+            font-style: italic;
+            font-size: 22px;
+            display: block;
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        .comment-red::after {
+            content: '"'
+        }
+
+        .comment-red::before {
+            content: '"'
+        }
 
         @media (max-width: 768px) {
             .app-icon {
@@ -1649,7 +1674,8 @@
             .tablet .top-bar .buttons {
                 flex-direction: row;
             }
-            .text-viz{
+
+            .text-viz {
                 max-width: 95%;
             }
 
@@ -1678,10 +1704,12 @@
         </div>
     </header>
     <div class="hero-image">
-        <div class="w-img"><img loading="lazy" alt="Portada" src="portada.jpg" /></div>
+        <div class="w-img"><img loading="lazy" alt="Portada" src="portadis-nuevo.png" /></div>
         <!--<div class="opacity"></div>-->
         <div class="w-text">
-            <h1> Los montadeudas: préstamos por aplicativos se vuelven una amenaza en Perú</h1>
+            <h1><span>LOS MONTADEUDAS &#32; &#32;</span><br> NUEVA MODALIDAD EXTORSIVA DE PRÉSTAMOS POR APLICATIVO
+                AMENAZA EN PERÚ
+            </h1>
             <!--<i style="font-size:13px; color: white; text-align: right; display: block;">Foto: </i>-->
         </div>
     </div>
@@ -1714,23 +1742,22 @@
                         </p>
 
                         <p class="texto-solo">
-                            <span class="comments">Lorem ipsum dolor sit amet consectetur adipiscing elit potenti
-                                blandit, dapibus ac porta quisque <i class="blue"> sed non integer habitant porttitor
-                                    consequat</i>, gravida
-                                phasellus faucibus tortor sagittis dictumst aptent massa. Mus dictumst
-                                fermentum</i></span>
+                            <span class="comments"><i class="blue">3,7 millones de peruanos</i> instalaron aplicativos
+                                de préstamos
+                                informales en sus dispositivos móviles desde el 2020.</span>
                         </p>
 
                         <p class="texto-solo">
-                            <span class="comments"><i class="red">30 acusados</i> de estos delitos figuran como los <i
-                                    class="blue">más buscados</i> en el <i class="blue">Programa de
-                                    Recompensas.</i></span>
+                            <span class="comments">Al menos <i class="blue">50 aplicativos de préstamos</i> informales
+                                alojados en Google <i class="blue">vulneran los parámetros de protección de
+                                    datos.</i></span>
                         </p>
 
                         <p class="texto-solo">
-                            <span class="comments">Los prófugos de la justicia por violencia de género que <i
-                                    class="red">se encuentran</i> en este <i class="red">sistema</i> tienen
-                                entre<i class="red"> 1 hasta 7 años sin ser capturados.</i></span>
+                            <span class="comments">Detrás de estos <i class="blue">préstamos informales</i> hay <i
+                                    class="blue">redes internacionales</i> de origen chino y mexicano que se establecen
+                                en territorio peruano gracias a estudios de abogados que crean empresas al
+                                destajo.</span>
                         </p>
                     </div>
                 </div>
@@ -1743,30 +1770,53 @@
                     <h5 class="legend">Por: Pamela Huerta Bustamante y José Luis Huacles Unocc</h5>
                     <h5 class="legend line">Publicado el 4 de junio de 2023</h5>
                     <br>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Non curabitur gravida arcu ac tortor dignissim convallis. Est
-                        velit egestas dui id ornare arcu odio. Lectus mauris ultrices eros in cursus. Dictumst quisque
-                        sagittis purus sit amet volutpat consequat. Varius quam quisque id diam vel. Et odio
-                        pellentesque diam volutpat commodo sed egestas. Morbi quis commodo odio aenean sed adipiscing
-                        diam. Nunc scelerisque viverra mauris in aliquam. </p>
-                    <p>Donec et odio pellentesque diam volutpat commodo. Condimentum vitae sapien pellentesque habitant.
-                        Fermentum leo vel orci porta non pulvinar. Magna fringilla urna porttitor rhoncus dolor purus
-                        non. Velit aliquet sagittis id consectetur. Convallis posuere morbi leo urna molestie. Orci
-                        dapibus ultrices in iaculis nunc. Consectetur a erat nam at lectus urna. Euismod elementum nisi
-                        quis eleifend quam adipiscing vitae proin.
+                    <p>En las últimas semanas, la Superintendencia de Banca y Seguros (SBS) alertó sobre las
+                        consecuencias de los préstamos por aplicativo debido a una serie de denuncias públicas. Una
+                        actividad no regulada por el Estado que aprovecha plataformas como Google Play Store para
+                        aparentar formalidad, pero que en realidad esconde un verdadero martirio detrás del ofrecimiento
+                        de “préstamos inteligentes y de confianza”, como indica la descripción de una de las tantas
+                        aplicaciones en cuestión. Se trata de los Montadeudas, una nueva modalidad de extorsión conocida
+                        en México, que se ha trasladado a nuestro país.</p>
+                    <p>En el Perú, en los últimos tres años, 3 730 802 personas instalaron aplicativos de préstamos
+                        informales en sus dispositivos móviles hasta mayo de 2023, según un análisis que LR Data
+                        realizó. El 86% de estas se descargaron apenas en el 2022.
+                    </p>
+                    <p>
+                        “Me llamaban, pero como era un número desconocido no respondía. Después de un rato, me doy con
+                        la sorpresa de que tenía como 20 mensajes. Me insultaban exigiendo que conteste, que pague una
+                        deuda. Estos mensajes me los enviaban de un número con código de México, no de acá”, narró una
+                        víctima de los Montadeudas. La mujer de 30 años afirma que jamás descargó ninguna aplicación de
+                        préstamos, pero cree que por error su pequeña hija pudo abrir algún enlace que no debía.
+                    </p>
+                    <p>
+                        En un principio decidió ignorar la situación, pero ante la insistencia contestó una de las
+                        llamadas en la que un hombre con actitud agresiva le advirtió que tenía un pago pendiente por
+                        1.050 soles. Un dinero que nunca vio en su cuenta bancaria.
+                    </p>
+                    <p>
+                        “Ahí les digo que no voy a pagar nada porque no me han prestado nada. Entonces, como me amenazan
+                        con llamar a mis contactos, yo decido borrar todo por temor y es en ese momento que me escriben
+                        diciendo: deja de borrar tus contactos porque igual tenemos todo tu registro”, expresó la madre
+                        de familia, quien dice haber entrado en pánico tras darse cuenta de que tenían acceso al sistema
+                        de su teléfono celular.
+                    </p>
+                    <span class="comment-red">-¿Cómo se identificaron cuando la contactaron?
+                        <br> -Era un hombre con acento medio mexicano que decía ser de Alpacash.
+                    </span>
+                    <p>
+                        La SBS reportó una lista con 26 aplicativos de préstamos informales identificados hasta mayo de
+                        2023. Asimismo, entre setiembre de 2022 y abril de 2023, recibieron 876 denuncias de usuarios
+                        que refieren estar sometidos a cobros extorsivos por un dinero que, en muchos casos, jamás
+                        solicitaron.
                     </p>
                 </div>
                 <section id="h-section">
                     <div class="tablet-section">
                         <div class="texto-lr">
                             <h2>Aplicaciones de préstamo en Perú</h2>
-                            <p>Nunc sed blandit libero volutpat sed cras ornare. Mi tempus imperdiet nulla malesuada
-                                pellentesque. Sollicitudin aliquam ultrices sagittis orci. Tempor nec feugiat nisl
-                                pretium fusce id velit ut tortor. Mauris pellentesque pulvinar pellentesque habitant
-                                morbi tristique senectus et netus. Aenean et tortor at risus viverra adipiscing at in
-                                tellus. Magna fermentum iaculis eu non diam phasellus. Purus sit amet luctus venenatis
-                                lectus magna fringilla urna. Dui ut ornare lectus sit amet. Consectetur purus ut
-                                faucibus pulvinar elementum integer enim neque volutpat.</p>
+                            <p>Este medio hizo una verificación adicional e identificó un total de 50 aplicativos de
+                                préstamos informales, de los cuales 34 se encuentran vigentes y 16 fueron eliminados o
+                                suspendidos, aunque el universo puede ser aún mayor.</p>
                         </div>
                         <div class="tablet">
                             <div class="top-bar">
@@ -1786,44 +1836,285 @@
                 <div id="modalContainer"></div>
 
                 <div class="texto-lr">
-                    <p>LR Data revisó la plataforma web de dicho programa y, al 24 de abril del 2023, de los 1.411
-                        feminicidios
-                        y 2.749 tentativas que se cuentan desde el 2012 a marzo del 2023, solo 30 denunciados por estos
-                        delitos
-                        fueron incluidos en el Programa de Recompensas.</p>
-                    <p>Asimismo, a través de una solicitud de información al Ministerio del Interior, se pudo conocer
-                        que en
-                        esta lista <span style="color:#111111;background-color:#feff00;">hay seis asesinos de mujeres
-                            prófugos que llevan siete años en la plataforma</span>, como es el caso
-                        de <span class="bold">Kenny Daniel Pinedo Sanchez, Luis Rodolfo Añamuro Machicao, Junior Antony
-                            Haro
-                            Saavedra, Guillermo Aguirre Tucto, Elmer Yoner Eguizabal Cruz y Carlos Sosimo Garcia
-                            Cantaro</span>.
-                        De este grupo, cinco pertenecen a regiones.</p>
+                    <p>A diferencia del ‘gota a gota’, que no espera validación alguna de nadie, los Montadeudas se
+                        hacen de una fachada que les permite camuflarse como una opción confiable para adquirir un
+                        crédito que cubra alguna necesidad inmediata. En un contexto en que la inflación y la pobreza no
+                        dejan de crecer, esto resulta bastante atractivo para las familias peruanas. Una vez que el
+                        usuario recibe el primer préstamo, estos no paran, pues los montos de dinero se seguirán
+                        acumulando en sus cuentas bancarias de forma automática.</p>
+
+
+                    <h2>La línea difusa entre la informalidad y la ilegalidad en los préstamos por apps
+                    </h2>
+                    <p>
+                        Los aplicativos de préstamos pueden hacer de las suyas gracias a la falta de regulación de los
+                        créditos fuera del sistema financiero y a los endebles parámetros de seguridad que establece
+                        Google Play Store para esta práctica. <span style="color:#111111;background-color:#feff00;">Del
+                            medio centenar de aplicaciones que LR Data pudo
+                            identificar en la plataforma, 18 están respaldadas por empresas constituidas en Perú, 2 por
+                            empresas extranjeras y 1 por una persona natural</span>. Las demás no lo especifican o
+                        utilizan
+                        empresas falsas como respaldo. De las empresas constituidas en Perú, 6 se encuentran en el
+                        Registro de Casas de Cambio, Préstamos y/o Empeños de la SBS.
+                    </p>
+                    <p>
+                        Daniel Reátegui, coordinador de supervisión de actividades informales de la SBS, precisó que
+                        estar inscrito en este registro no es sinónimo de tener autorización para otorgar préstamos.
+                    </p>
+                    <p>
+                        “En el Perú, cualquier empresa o persona natural que se quiera dedicar a hacer préstamos de
+                        dinero debe inscribirse en el registro, pero solamente para fines de prevención de lavado de
+                        activos o financiamiento de actos terroristas. No se trata de una autorización como se hace en
+                        el caso de entidades financieras. Por eso, estas empresas inscritas en el registro no son
+                        empresas supervisadas”, sentenció. Además, añadió que, a la fecha, este registro no contempla
+                        ningún tipo de aplicativo móvil.
+                    </p>
+
+                    <p>
+                        Por su parte, Google decidió no atender la entrevista que se le solicitó y solo alcanzó algunos
+                        enlaces sobre sus políticas de privacidad. Tras revisarlos detalladamente, se identificó cómo
+                        pueden ser vulneradas con facilidad.
+                    </p>
+                    <p>
+                        Para alojar una aplicación en Google Play Store, el desarrollador —que puede ser cualquier
+                        persona natural o jurídica— solo debe seguir cuatro sencillos pasos. Primero, registrarse para
+                        obtener una cuenta como tal de Google Play. Segundo, aceptar el acuerdo de distribución para
+                        desarrolladores. Tercero, pagar 25 dólares por la tarifa de registro. Finalmente, completar los
+                        detalles de la cuenta con datos de identidad. En ese proceso, el filtro de seguridad recae sobre
+                        el segundo paso, pues el convenio en mención detalla los parámetros específicos que deben
+                        seguirse.
+                    </p>
+                    <p>
+                        En el caso de las aplicaciones de préstamos personales, los lineamientos de la compañía precisan
+                        en un primer punto los contenidos restringidos. Prohíben aplicaciones que expongan a los
+                        usuarios a productos y servicios financieros engañosos o dañinos, así como el acceso a datos
+                        sensibles como fotos, contactos y localización. Igualmente, agregan que estas aplicaciones deben
+                        cumplir con las reglamentaciones estatales y locales de la jurisdicción donde operen.
+                        Irónicamente, en la práctica, nada de esto se cumple.
+                    </p>
+                    <p>
+                        “Este tipo de repositorios de aplicaciones cuentan con medidas y controles de seguridad que son
+                        aplicables a los desarrolladores y que cuando las aplicaciones son catalogadas como maliciosas,
+                        se bloquean. Sin embargo, también hay múltiples desarrollos que no necesariamente resultan
+                        maliciosos, pero sí intrusivos en cuanto a la privacidad. Esta es una de las principales
+                        características por las cuales, en algunas ocasiones, los mecanismos de seguridad son burlados”,
+                        explicó Miguel Ángel Mendoza, investigador de Seguridad Informática de ESET Latinoamérica.
+                    </p>
+                    <p>
+                        De las 34 aplicaciones vigentes que se identificaron en esta investigación, todas tienen acceso
+                        a la cámara del equipo y, a excepción de una, también a los contactos y ubicación de los
+                        usuarios.
+                    </p>
                     <div class="flourish-embed flourish-table" data-src="visualisation/13686328">
                         <script src="https://public.flourish.studio/resources/embed.js"></script>
                     </div>
-                    <p>Si bien este programa cuenta con la Comisión Evaluadora de Recompensas contra la Criminalidad
-                        (Cercri)
-                        del Mininter —la cual sesiona semanalmente para determinar qué personas deben ser incluidas en
-                        esta
-                        lista—, el requisito indispensable para que una persona sea agregada a esta plataforma es que
-                        debe tener
-                        una orden de captura, según confirmó el exministro del Interior Rubén Vargas a este medio.
-                        También
-                        pueden ingresar por solicitud o recomendación de la PNP, de la administración pública, de
-                        organizaciones
-                        no gubernamentales o de la misma sociedad civil.
+                    <p>Pero estar indefenso ante una extorsión, sin control de tu privacidad y acosado constantemente,
+                        no debería ser la regla. Para Elmer Quiroz Peña, especialista en ciberseguridad financiera, las
+                        extorsiones por aplicativos de préstamos son consecuencia del desconocimiento y la necesidad.
+                        Pese a ello, señala que la Ley de Protección de Datos Personales (n.° 29733) y la Ley de Delitos
+                        Informáticos (n.° 30096) son los canales para sancionar esta nueva modalidad de extorsión.
+                    </p>
+                    <p>
+                        “El uso indebido de datos personales está penado con cárcel, ya sea por alteración de algún
+                        software, vulneración de información a través de entidades públicas, intercepción de las
+                        comunicaciones, etc. Ahora, parámetros específicos, como tal, no existen, pero todo ello está
+                        considerado”, sugirió.
+                    </p>
+                    <h2>Métodos importados de extorsión: los tentáculos de China y México
+                    </h2>
+                    <p>
+                        Las aplicaciones de préstamos informales no son algo tan nuevo en Latinoamérica. <span
+                            class="bold"> De hecho, es
+                            una modalidad extorsiva que se habría engendrado en México con financiamiento de China, o al
+                            menos ese es el origen rastreable más cercano que LR Data ha podido verificar</span>. En la
+                        realidad
+                        peruana, las empresas que respaldan estas aplicaciones se constituyen —gracias a estudios de
+                        abogados, estudios contables y notarías del país— con el objetivo de ofrecer servicios de
+                        desarrollo de software, préstamos y cobranzas.
+
+                    </p>
+
+                    <p>
+                        La mayoría de ocasiones, estos estudios hacen de socios fundadores hasta que se concluye el
+                        proceso de constitución de las empresas y luego las ceden a un propietario original a través de
+                        actualizaciones. <span style="color:#111111;background-color:#feff00;">En la búsqueda, se pudo
+                            identificar dos redes que vinculan a cuatro empresas
+                            que han terminado en manos de ciudadanos chinos o mexicanos</span>.
+                    </p>
+
+                    <h5>IPESO PERÚ SAC - FINBENEFICIO PERÚ SAC
+                    </h5>
+                    <div style="width: 100%;">
+                        <div style="position: relative; padding-bottom: 100%; padding-top: 0; height: 0;"><iframe
+                                title="Ipeso - FinBeneficio" frameborder="0" width="800" height="800"
+                                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                                src="https://view.genial.ly/647c432e20e6b80018127f34" type="text/html"
+                                allowscriptaccess="always" allowfullscreen="true" scrolling="yes"
+                                allownetworking="all"></iframe> </div>
+                    </div>
+                    <p>
+                        <span style="color:#111111;background-color:#feff00;">La empresa Ipeso Perú S. A. C. está
+                            vinculada a las aplicaciones de préstamos CPlatinka, Isoles,
+                            Solcash y CocoCrédito. Mientras que la empresa Finbeneficio Perú S. A. C. está vinculada a
+                            la
+                            aplicación de préstamos Takai</span>. Ambas han sido constituidas en la Notaría Rosales
+                        Sepúlveda de
+                        Fermín Rosales Sepúlveda y por el estudio de abogados Porto Legal de José Miguel Porto, quien,
+                        según su registro migratorio, ha viajado al menos 14 veces a México. En este desarrollo, quien
+                        asume la tarea de fundar las empresas es Katherine Ortiz León, una abogada asociada a la misma
+                        firma que dice tener “experiencia en las áreas de derecho civil, corporativo, laboral y
+                        protección de datos personales”.
+                    </p>
+
+                    <p>
+                        En el caso de Ipeso Perú S. A. C., después de conformarse, pasó a manos de Yangbing Zhao, un
+                        ciudadano chino que también es dueño de la empresa Aztlan Network en México y que fue creada por
+                        el estudio de abogados Consulting & Valuation Services Roms S. C. Esta última a su vez está
+                        vinculada a otras dos empresas de origen chino: MIB Network Limited y Wakanda Network Limited,
+                        como también lo reveló el noticiero digital La Encerrona.
+                    </p>
+
+                    <p>
+                        En nuestro país, Ipeso Perú S. A. C. tiene actualmente como apoderado legal a Diego Uribe
+                        Tejeda, de la firma YAUD abogados. LR Data se comunicó con él y refirió que un ciudadano
+                        mexicano —de quien no recordaba el nombre— lo contactó para hacerse cargo de una denuncia
+                        vinculada al uso de unos logotipos. Asimismo, dijo no saber quién es Yangbing Zhao y menos que
+                        la empresa estuviera vinculada a aplicativos de préstamos informales.
+                    </p>
+                    <p>
+                        La ruta es parecida en el caso de Finbeneficio Perú S. A. C., que actualmente se encuentra en
+                        manos de Daniel Moctezuma Espitia, un ciudadano mexicano que ha ingresado dos veces a Perú en lo
+                        que va del año. En este caso, Porto Legal continúa como apoderado legal de la compañía.
+                    </p>
+                    <p>
+                        Sin embargo, a través de un correo electrónico, la firma legal indicó que “se trata de un
+                        cliente al que le brindamos servicios legales y lo acompañamos en su debida constitución y para
+                        la obtención de su registro correspondiente ante la SBS para brindar préstamos, la cual obtuvo
+                        según Resolución SBS n.° 685-2023”.
+                    </p>
+                    <span class="comment-red">
+                        -¿Cuáles son los protocolos que aplican para ceder las empresas que fundan?<br>
+                        -Para aceptar a un cliente, constituir una sociedad en su representación y cederla, seguimos un
+                        protocolo interno. El proceso incluye una entrevista personal para validar la idea de negocio y
+                        legitimidad del mismo. Validamos información proporcionada en la entrevista con información de
+                        fuentes públicas en Internet y cuando sea posible, conseguimos referencias de terceros. Solo
+                        tras haber completado este proceso satisfactoriamente es que se acepta un encargo.
+
+                    </span>
+                    <p>La empresa rechazó cualquier práctica de préstamos informales en el mercado y aseguró que en la
+                        actualidad su cliente Finbeneficio Perú S. A. C. no está vinculado a ningún evento de esa
+                        categoría.</p>
+                    <div class="principal-comment">
+                        <div class="slide-future">
+                            <span class="slide-future--prev" onclick="prevSlide()"> &#60;</span>
+                            <span class="slide-future--next" onclick="nextSlide()"> &#62;</span>
+                        </div>
+                        <div class="slide-container">
+                            <div class="slide">
+                                <div class="slide-title">Sbs e Informalidad financiera</div>
+                                <div class="slide-content"> La Superintendencia de Banca y Seguros (SBS) afirma que no
+                                    autoriza préstamos de ninguna entidad fuera del sistema financiero. En ese sentido,
+                                    cualquier persona natural o jurídica que realice esta práctica estará actuando en el
+                                    marco de la informalidad financiera. Asimismo, ninguna de las aplicaciones de
+                                    préstamos se encuentra regulada por la SBS.</div>
+                            </div>
+                            <div class="slide">
+                                <div class="slide-title">Informalidad financiera</div>
+                                <div class="slide-content">Se considera informalidad financiera e informalidad de
+                                    seguros, la realización de las siguientes actividades: captar o recibir en forma
+                                    habitual dinero de terceros, directa o indirectamente, en depósito, mutuo o
+                                    cualquier otra forma, y colocar tales recursos en forma de créditos, inversión o de
+                                    habilitación de fondos, bajo cualquier modalidad contractual.</div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="slide-navigation">
+
+                        </div>
+                    </div>
+                    <h5>CB FINTECH SAC – XINTAI PERÚ SAC:
+                    </h5>
+                    <div style="width: 100%;">
+                        <div style="position: relative; padding-bottom: 100%; padding-top: 0; height: 0;"><iframe
+                                title="FINTECH - XINTAI" frameborder="0" width="800" height="800"
+                                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                                src="https://view.genial.ly/647c945f11bb93001963ea44" type="text/html"
+                                allowscriptaccess="always" allowfullscreen="true" scrolling="yes"
+                                allownetworking="all"></iframe> </div>
+                    </div>
+                    <p>
+                        Por otro lado, <span style="color:#111111;background-color:#feff00;">la empresa CB Fintech S. A.
+                            C. está vinculada a la aplicación de préstamos Ya
+                            Créditos y Xintai Perú S. A. C. está vinculada a la aplicación de préstamos
+                            Zooprestamos</span>. Ambas
+                        han sido constituidas en la Notaría Fernandini de Ricardo Fernandini Barreda.
+                    </p>
+                    <p>
+                        En el caso de CB Fintech S. A. C. tuvo como socios fundadores a Manuel Pérez Suarez y a Miluska
+                        Martínez Rose, ambos integrantes del estudio contable VALPS Perú. LR Data se contactó con la
+                        compañía y confirmaron que integran la firma; sin embargo, respondieron que no atenderían las
+                        consultas hasta el próximo lunes 5 de junio, fecha posterior a la publicación de este informe.
+                        Es preciso mencionar que, según los registros de la Superintendencia Nacional de Aduanas y de
+                        Administración Tributaria (SUNAT), el señor Manuel Pérez Suarez figura como apoderado,
+                        presidente, liquidador y gerente general de más de 20 empresas en el país.
+                    </p>
+                    <p>
+                        En tanto, CB Fintech S. A. C. tuvo como apoderados legales al staff del estudio de abogados
+                        Payet Rey Cauvi Pérez, quienes también confirmaron que Gabriel Ochoa, José Cúneo, Luis Gavidia,
+                        Sharmilla Ríos, Rafael Ortiz y Milen Alvino pertenecen a la firma. El estudio respondió a través
+                        de José Cúneo, quien refirió que fueron contratados solo para la constitución de la sociedad
+                        anónima cerrada y el registro como empresa de préstamos ante la SBS. “Por último, no hemos
+                        tenido contacto con Lin Xuequin ni con Lin Guang”, finalizó el contacto.
+                    </p>
+                    <p>
+                        Los ciudadanos chinos de los que se desliga Cúneo son los actuales propietarios de CB Fintech S.
+                        A. C., quienes al día siguiente de intentar ubicarlos en sus oficinas para obtener sus descargos
+                        por las aplicaciones de préstamos informales, contrataron al abogado Marco Gonzalez para cambiar
+                        a los miembros de la gerencia general.
+                    </p>
+                    <p>
+                        “A mí me contactó (el 1 de junio 2023) una traductora porque los dueños no hablan español. Me
+                        pidieron que me haga cargo del cambio de gerencia de la empresa. Ha sido reciente”, detalló el
+                        letrado. Agregó también que no tenía conocimiento de ninguna aplicación de préstamos vinculada a
+                        esta empresa y que les solicitaría que se pusieran en contacto con LR Data para que emitieran
+                        los descargos respectivos.
+                    </p>
+                    <p>
+                        <span style="color:#111111;background-color:#feff00;">La historia de Xintai Perú S. A. C.
+                            resulta similar, con la única diferencia que no utilizaron
+                            socios fundadores externos a la compañía</span>. En este caso, contrataron al abogado Diego
+                        Ortega
+                        Chávarri para hacerse cargo de la constitución de la empresa como apoderado en Perú de la
+                        Compañía China Broglie, presidida por Shen Yiming. Esta, a su vez, tuvo como asociado al
+                        ciudadano chino Zhang Dong Yang, con quien este medio se pudo comunicar. Este refirió, a través
+                        de una llamada telefónica, que nos pondría en contacto con su abogado José Ángeles Heredia,
+                        quien además es el apoderado legal de la empresa. Sin embargo, al cierre de este reportaje no se
+                        dio la comunicación.
+                    </p>
+                    <p>
+                        El resto de empresas que cuentan con aplicativos de préstamos tienen estructuras de constitución
+                        similares y esto no es casualidad. <span style="color:#111111;background-color:#feff00;">Los
+                            estudios de abogados juegan en el limbo de la
+                            responsabilidad para sumar clientes. Crean empresas a destajo —porque así lo permite el
+                            sistema
+                            peruano— sin tener en cuenta las acciones en las que estas puedan incurrir posteriormente.
+                            En el
+                            caso de las aplicaciones de préstamos informales, en delitos extorsivos como los
+                            Montadeudas.</span>
                     </p>
                 </div>
 
                 <div class="texto-lr text-viz">
                     <div class="number titulo-viz">7082 quejas</div>
-                    <div class="titulo-viz"> De personan en Google Play Store narran la lucha infructuosa de los
-                        estafados por préstamos personales.
+                    <div class="titulo-viz"> LR Data procesó un total de 7.082 quejas de usuarios de estas aplicaciones
+                        de préstamos informales desde Google Play Store. Entre estos, se hacen advertencias por cobros
+                        indebidos, mal uso de información personal, cobros extorsivos y seguimiento virtual.
                     </div>
                     <div class="titulo-viz">
-                        <i class="fa fa-user item" style="font-size:16px;"> </i><span>= Una queja/denuncia de una persona en los comentarios de
+                        <i class="fa fa-user item" style="font-size:16px;"> </i><span>= Una queja/denuncia de una
+                            persona en los comentarios de
                             las aplicaciones </span>
                     </div>
                 </div>
@@ -1837,184 +2128,43 @@
 
                 </section>
                 <div class="texto-lr">
-                    <p>Por brindar algún dato sobre estos feminicidas, la plataforma ofrece S/15.000 para tres de ellos,
-                        S/18.000 para uno, S/20.000 para 17, S/30.000 para ocho y S/50.000 para<span class="bold">
-                            Alberto
-                            Ccanto Balbin</span>, un asesino que mató crudamente a E. T. E. en el 2016 y a E. C. C. en
-                        el 2019,
-                        cuando ya era buscado por su primer feminicidio.</p>
-                    <p>Sin embargo, en el Programa de Recompensa los montos más altos se encuentran en delitos como el
-                        tráfico
-                        ilícito de drogas (70.000 soles), robo agravado (75.000 soles), junto con lavado de activos y
-                        homicidio
-                        calificado, que prometen hasta 100.000 soles.</p>
-                    <p>Para el exministro, de nada sirven los montos si no hay una estrategia de difusión permanente.
-                        “[La
-                        inclusión de un criminal] debería llegar como una alerta a todos los usuarios de teléfono en
-                        cooperación
-                        con las operadoras”, sugiere. Esta unidad trató de comunicarse con algún vocero del programa en
-                        mención,
-                        pero no se obtuvo respuesta a la fecha a pesar de que señalaron que sí brindarían declaraciones
-                        sobre el
-                        tema.</p>
-                    <h2>Ausencia de enfoque de género y desidia: las causas del lento accionar de las autoridades</h2>
-                    <p>Pese a que fueron hechos atroces, uno de los feminicidas que se encuentra en el sistema de
-                        recompensas
-                        recién ingresó a esta nueve años después de haber cometido el delito. <span class="bold">Tito
-                            Humberto
-                            Cueva Rodriguez</span> fue incluido en marzo del 2017 y capturado cinco meses después tras
-                        ser
-                        condenado por el feminicidio que cometió en el 2012. No obstante, salió en libertad en el 2018
-                        al
-                        anularse su sentencia, pero un nuevo fallo judicial que lo sentenció a 22 años de cárcel
-                        propició que
-                        sea agregado nuevamente en la plataforma el 18 de mayo del 2021.</p>
+                    <p>Al entrevistar a la víctima de Alpacash que narra su experiencia al principio de esta historia,
+                        se le preguntó si optó por denunciar lo que le sucedió.</p>
+                    <span class="comment-red">¿Por qué no denunció que estaba siendo víctima de los Montadeudas?
+                        Yo fui a la Comisaría de San Miguel y no me quisieron aceptar la denuncia. Me dijeron que de
+                        repente podría ser una persona que me tenía cólera, algún familiar, una expareja, etc. y no me
+                        aceptaron la denuncia. Me dijeron que si quería que fuera a la Dirincri (Dirección de
+                        Investigación Criminal) de Alfonso Ugarte, que quizá allá me iban a hacer caso. Yo fui allá y
+                        cuando llegué, me dijeron que el secretario no estaba. Eran las 11.30 a. m., esperé una hora y
+                        nunca llegó. Yo tenía que trabajar y me tuve que ir. Después de eso (Alpakash) siguieron
+                        mandándome mensajes y correos electrónicos.
+                    </span>
+                    <p>Ante tantos casos reportados públicamente y ante la SBS, se le solicitó a la Policía Nacional del
+                        Perú (PNP) el número de denuncias vinculadas a esta nueva modalidad de extorsión; sin embargo,
+                        respondieron que tras verificar la base de datos del Sistema de Denuncia Policial (SIDPOL) no
+                        encontraron información relacionada. Se reiteró la solicitud a través del coronel Cesar
+                        Echevarría Cabrejos, director de la Dirección de Comunicación e Imagen Institucional (DIRCII),
+                        pero no se obtuvo respuesta. Al solicitar una entrevista a la institución, respondieron a través
+                        de un correo electrónico que no podían atender por exceso de carga laboral. </p>
+                    <p>En una nueva revisión sobre los préstamos por aplicativos, LR Data identificó nuevas aplicaciones
+                        y actualizaciones con cambios de nombres que no fueron consideradas en las primeras 50.</p>
 
-                    <div class="principal-comment">
-                        <div class="slide-future">
-                            <span class="slide-future--prev" onclick="prevSlide()"> &#60;</span>
-                            <span class="slide-future--next" onclick="nextSlide()"> &#62;</span>
-                        </div>
-                        <div class="slide-container">
-                            <div class="slide">
-                                <div class="slide-title">Slide navigation</div>
-                                <div class="slide-content"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    Morbi feugiat ac mi sed hendrerit. Phasellus fringilla commodo erat sit amet
-                                    volutpat. Maecenas leo sem, efficitur vel nibh non, dignissim lacinia arcu. Quisque
-                                    maximus, lectus quis sagittis lobortis, felis enim facilisis justo, aliquet
-                                    condimentum neque nisl et nunc. Duis non efficitur mauris. Sed efficitur eros eu
-                                    gravida ultrices. Ut rhoncus metus auctor facilisis finibus. Maecenas vitae ipsum id
-                                    nulla vulputate lacinia. Phasellus malesuada lacus non erat aliquam molestie. </div>
-                            </div>
-                            <div class="slide">
-                                <div class="slide-title">Slide navigation</div>
-                                <div class="slide-content">Mauris vitae ultrices purus. Mauris id velit vel velit
-                                    aliquam posuere. Pellentesque libero mauris, ultricies vitae risus vitae, facilisis
-                                    hendrerit nibh. Nunc ultricies tellus euismod venenatis interdum. Fusce tortor
-                                    turpis, sagittis in ipsum a, mollis commodo orci. Aliquam lorem dolor, facilisis nec
-                                    erat ac, molestie suscipit sem. Nunc placerat urna ut est commodo, vel aliquet elit
-                                    iaculis. Suspendisse interdum metus lectus, ut ullamcorper quam venenatis in. Nunc
-                                    tempus ornare mollis. Vivamus auctor tellus vitae dui laoreet, sed eleifend magna
-                                    dignissim. Maecenas ac facilisis massa.</div>
-                            </div>
-                            <div class="slide">
-                                <div class="slide-title">¿Slide navigation whta has?</div>
-                                <div class="slide-content">Nullam porttitor lectus vel iaculis hendrerit. Aenean
-                                    sagittis dolor justo, et commodo mauris suscipit sit amet. Orci varius natoque
-                                    penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras vitae
-                                    lobortis turpis. Vestibulum ac metus ac diam rhoncus volutpat quis ac nisi. Mauris
-                                    in odio mi. Cras nec scelerisque odio, ac euismod mauris. In nec ipsum arcu. Sed
-                                    massa lorem, condimentum ut varius iaculis, laoreet at metus.</div>
-                            </div>
-                            <div class="slide">
-                                <div class="slide-title">¿Slide navigation whta has?</div>
-                                <div class="slide-content">Praesent eu felis at turpis sollicitudin tempus non quis
-                                    quam. Aenean aliquet, massa at vehicula pulvinar, elit urna aliquam est, a
-                                    consectetur ligula metus quis lacus. Aenean tincidunt viverra dapibus. Proin quam
-                                    felis, mattis eu lorem quis, volutpat porta tortor. Phasellus id maximus sapien, id
-                                    volutpat tellus. Morbi facilisis eget diam vitae dictum. Pellentesque tristique
-                                    libero ut semper pulvinar. Curabitur id efficitur nisl. Duis ornare, diam nec
-                                    vestibulum sollicitudin, lacus nunc vehicula mi, vitae facilisis est felis sit amet
-                                    nibh. Vivamus fermentum dui quam, ut maximus nibh vehicula quis. Donec feugiat eros
-                                    ac quam elementum luctus.</div>
-                            </div>
-                            <div class="slide">
-                                <div class="slide-title">Slide navigation</div>
-                                <div class="slide-content">Integer cursus tortor ac diam tempus porta. Sed gravida
-                                    auctor neque, a tincidunt nibh sollicitudin id. In hac habitasse platea dictumst.
-                                    Sed id tempus mi. Aenean in leo feugiat magna pretium laoreet in eu leo. Etiam
-                                    efficitur libero vel pretium elementum. Phasellus feugiat leo id orci auctor, vel
-                                    iaculis erat volutpat. Aliquam id tempus lectus.</div>
-                            </div>
-                        </div>
-
-                        <div class="slide-navigation">
-
-                        </div>
-                    </div>
-
-
-
-                    <p>En tanto, <span class="bold">Jhon Freddy Romero Salcedo</span> fue incluido luego de siete años.
-                        El
-                        ciudadano colombiano asesinó a J.S.N. de 27, en el 2014, cuyos restos fueron arrojados en el
-                        templo inca
-                        Sacsayhuamán. Se solicitó su extradición en el 2015 y fue incluido en el Programa de Recompensas
-                        el 30
-                        de noviembre del 2021.</p>
-                    <div class="flourish-embed flourish-gantt" data-src="visualisation/13540452">
-                        <script src="https://public.flourish.studio/resources/embed.js"></script>
-                    </div>
-                    <p>Edith Aiquipa, abogada de la organización Flora Tristán, especifica que el pedido de orden de
-                        captura es
-                        diferente cuando se encuentra al responsable en flagrancia. Por ejemplo, para el caso de Sergio
-                        Tarache,
-                        esta debió darse inmediatamente. La ruta que se sigue empieza con la convocatoria del fiscal y
-                        con la
-                        información recabada por la Policía y la Fiscalía es que se solicita la orden. El juez encargado
-                        es
-                        quien finalmente la dispone.</p>
-                    <p>“En el caso de Sergio Tarache hubo una demora desde el inicio entre el serenazgo con la policía
-                        para
-                        poder atrapar al feminicida. Pero hay falta de sensibilidad para estos casos y naturalización de
-                        la
-                        violencia”, detalla la letrada.</p>
-                    <p>Si bien cada caso tiene sus propias características, la abogada precisa que cuando un feminicidio
-                        o una
-                        tentativa ocurren en el espacio privado, sí se registran más dificultades para recabar los
-                        elementos y
-                        así pedir una orden de captura. “En esos casos, por lo general, se puede pedir durante la etapa
-                        de
-                        investigación preliminar, o sea a nivel fiscal, o en la investigación preparatoria”, explica.
+                    <p>Esto sería muestra de que los Montadeudas no están un paso más adelante que las autoridades
+                        peruanas, sino que parecen ser invisibles para ellos. Aparentemente, es más sencillo catalogar
+                        las extorsiones como ‘gota a gota’, que profundizar en una nueva modalidad delictiva con una
+                        estructura que se aprovecha de los vacíos legales para operar. Para ellos puede resultar
+                        conveniente, pues seguirán otorgando préstamos fuera del sistema financiero sin que nadie haga
+                        nada. Lo cierto es que al final del día, los prestamistas online recuperan su dinero a punta de
+                        cobros extorsivos, hechos que difícilmente serán denunciados por miedo, vergüenza o falta de
+                        comprensión en una comisaría.
                     </p>
-                    <p>La letrada señala que se necesita sensibilización, capacitación en temas de género y presupuesto
-                        para que
-                        la <span class="bold">Policía</span>, el <span class="bold">Ministerio Público</span> y el <span
-                            class="bold">Poder Judicial</span> respondan de manera adecuada a la cruda situación que
-                        viven las
-                        mujeres. Asimismo, señala a estas tres instituciones como <span
-                            style="color:#111111;background-color:#feff00;">las principales responsables de la impunidad
-                            en la que suelen quedar los feminicidios.</span></p>
-                    <h2>Impunidad para los feminicidas, incertidumbre para familiares de las víctimas</h2>
-                    <p>“Lo que más alienta al crimen es la impunidad, y esos casos que están años en el sistema sin ser
-                        capturados son ejemplo de impunidad”, enfatiza Rubén Vargas.</p>
-                    <p>Por su parte, para la antropóloga feminista Angélica Motta, la crueldad con la que se perpetúan
-                        los
-                        feminicidios en los últimos años y el traslado de estos al espacio público es resultado de los
-                        altos
-                        niveles de impunidad. “Quienes perpetran estos crímenes, están diciendo que pueden darse el lujo
-                        de
-                        hacer esto en la vía pública y frente a los ojos de mucha gente”, enfatiza.</p>
-                    <p>“Cada vez que se hace un juicio y hay una sentencia justa, pues un efecto demostrativo de que
-                        efectivamente somos una sociedad que no tolera estas cosas, pero cuando no se sanciona y el
-                        Poder
-                        Judicial no hace su trabajo debidamente, el mensaje que se está mandando es que esto puede
-                        seguir y aquí
-                        no pasa nada”, agrega.</p>
-                    <p>A ello, Motta sostiene que, entre los factores de esta escalada de violencia machista que se
-                        viene dando
-                        en los últimos años, —pero que sobre todo se ha evidenciado en los últimos meses— es la <a
-                            target="_blank"
-                            href="https://data.larepublica.pe/mujeres-y-menores-en-peligro-este-2022-el-ano-en-que-el-congreso-freno-el-avance-en-la-conquista-de-sus-derechos/">campaña
-                            contra el enfoque de género</a> y pro patriarcal que llevan a cabo las fuerzas políticas
-                        antiderechos que
-                        actualmente forman parte de la coacción de gobierno.</p>
-                    <h2>Canales de ayuda</h2>
-                    <p>Si eres o conoces a alguien que ha sido afectada o involucrada en hechos de violencia familiar o
-                        sexual, comunícate
-                        de manera gratuita a la <span class="bold">Línea 100</span> del Ministerio de la Mujer y
-                        Poblaciones Vulnerables, que cuenta con un equipo
-                        especializado en “brindar información, orientación y soporte emocional”.</p>
-                    <p>Además, la Línea 100 tiene la facultad de derivar los casos de <span class="bold">violencia
-                            familiar o sexual</span> más graves a los Centros
-                        de Emergencia Mujer o al Servicio de Atención Urgente. Este servicio atiende las 24 horas, todos
-                        los días del año
-                        (incluye feriados).</p>
+
+                    
                     <br>
-                    <p style="text-align: center;"><span class="bold">Videoresumen</span></p>
+                    <!-- <p style="text-align: center;"><span class="bold">Videoresumen</span></p>
                     <iframe src='//mdstrm.com/embed/644d92090a3e4e2dcd9522ea?player=5ff34f13f89edc69bfe53d79'
                         width='100%' height='360' allow='autoplay; fullscreen; encrypted-media' frameborder='0'
-                        allowfullscreen allowscriptaccess='always' scrolling='no'></iframe>
+                        allowfullscreen allowscriptaccess='always' scrolling='no'></iframe> -->
                 </div>
             </div>
         </div>
@@ -2023,9 +2173,13 @@
         <div class="w-1000">
 
             <span><strong>Texto:</strong> Pamela Huerta</span>
-            <span><strong>Desarrollo Web:</strong> José Luis Huacles</span>
-            <span><strong>Coordinación:</strong> Milagros Requena</span>
-
+            <span><strong>Infografías:</strong> Jazmín Ceras y Alvaro Lozano
+            </span>
+            <span><strong>Extracción de datos y desarrollo web:</strong> José Luis Huacles Unocc</span>
+            <span><strong>Diseño web:</strong> Jazmín Ceras</span>
+            <span><strong>Diseño de portada:</strong>  Fabrizio Oviedo</span>
+            <span><strong>Edición y coordinación general:</strong> Milagros Requena</span>
+            
             <br />
 
             <span>Si deseas contactarte con la unidad puedes escribirnos a:</span>
@@ -2276,7 +2430,7 @@
                 <img style="width:25px;height:25px;" src="icono_web.png">
             </div>
             <div class="modal-info-item-subtitle">Página web del desarrollador: </div>
-            <div class="modal-info-item-subcontent"> ${app['Pagina web del desarrollador']}</div>
+            <div class="modal-info-item-subcontent"> ${app['Página web de la aplicación']}</div>
         </div>
       
     </div>
@@ -2336,55 +2490,55 @@
 
 
         d3.json("data.json").then(function (data) {
-        // Verificamos si la pantalla tiene un ancho menor a 499 y es un dispositivo móvil
-        var isMobile = window.innerWidth < 499 && /Mobi/i.test(navigator.userAgent);
+            // Verificamos si la pantalla tiene un ancho menor a 499 y es un dispositivo móvil
+            var isMobile = window.innerWidth < 499 && /Mobi/i.test(navigator.userAgent);
 
-        // Creamos un i por cada objeto en el array "data"
-        var icons = d3
-          .select("#container")
-          .selectAll("i")
-          .data(data.data)
-          .enter()
-          .append("i")
-          .attr("class", "fa fa-user item");
+            // Creamos un i por cada objeto en el array "data"
+            var icons = d3
+                .select("#container")
+                .selectAll("i")
+                .data(data.data)
+                .enter()
+                .append("i")
+                .attr("class", "fa fa-user item");
 
-        // Función para mostrar el tooltip
-        function showTooltip(d) {
-          d3.select("#tooltip")
-            .html('<span class="user-comment">' + d.Comentario + "</span>" + '<span class="user">' + d.Usuario + ". " + d.fecha + "</span>")
-            .attr("class", "tooltip-show");
-        }
+            // Función para mostrar el tooltip
+            function showTooltip(d) {
+                d3.select("#tooltip")
+                    .html('<span class="user-comment">' + d.Comentario + "</span>" + '<span class="user">' + d.Usuario + ". " + d.fecha + "</span>")
+                    .attr("class", "tooltip-show");
+            }
 
-        // Función para ocultar el tooltip
-        function hideTooltip() {
-          d3.select("#tooltip").attr("class", "tooltip-hide");
-        }
+            // Función para ocultar el tooltip
+            function hideTooltip() {
+                d3.select("#tooltip").attr("class", "tooltip-hide");
+            }
 
-        // Mostramos el primer comentario por defecto
-        showTooltip(data.data[0]);
+            // Mostramos el primer comentario por defecto
+            showTooltip(data.data[0]);
 
-        if (isMobile) {
-          // Cambio automático de tooltips cada 5 segundos en dispositivos móviles
-          var currentIndex = 0;
-          setInterval(function () {
-            var currentData = data.data[currentIndex];
-            showTooltip(currentData);
-            currentIndex = (currentIndex + 1) % data.data.length;
-          }, 5000);
-        } else {
-          // Mostramos el comentario al hacer hover sobre el icono en versiones no móviles
-          icons.on("mouseover", function (event, d) {
-            d3.select(this).attr("class", "fa fa-user item item-hover");
-            showTooltip(d);
-          });
+            if (isMobile) {
+                // Cambio automático de tooltips cada 5 segundos en dispositivos móviles
+                var currentIndex = 0;
+                setInterval(function () {
+                    var currentData = data.data[currentIndex];
+                    showTooltip(currentData);
+                    currentIndex = (currentIndex + 1) % data.data.length;
+                }, 5000);
+            } else {
+                // Mostramos el comentario al hacer hover sobre el icono en versiones no móviles
+                icons.on("mouseover", function (event, d) {
+                    d3.select(this).attr("class", "fa fa-user item item-hover");
+                    showTooltip(d);
+                });
 
-          // Ocultamos el comentario y restauramos el estilo al quitar el cursor del icono en versiones no móviles
-          icons.on("mouseout", function (event, d) {
-            d3.select(this).attr("class", "fa fa-user item");
-            hideTooltip();
-          });
-        }
-      });
+                // Ocultamos el comentario y restauramos el estilo al quitar el cursor del icono en versiones no móviles
+                icons.on("mouseout", function (event, d) {
+                    d3.select(this).attr("class", "fa fa-user item");
+                    hideTooltip();
+                });
+            }
+        });
     </script>
     <script>
         const slides = document.querySelectorAll('.slide');
