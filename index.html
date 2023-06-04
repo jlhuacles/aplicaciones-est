@@ -2332,49 +2332,81 @@
 
 
         d3.json("data.json").then(function (data) {
-            // Verificamos si la pantalla tiene un ancho menor a 499 y es un dispositivo móvil
-            let isMobile = window.innerWidth < 499 && /Mobi/i.test(navigator.userAgent);
+        var itemCount = 7802; // Número total de elementos item
+        var displayedComments = []; // Comentarios que se han mostrado
+        var currentIndex = 0; // Índice actual en displayedComments
 
-            // Creamos un i por cada objeto en el array "data"
-            let icons = d3.select("#container")
-                .selectAll("i")
-                .data(data.data)
-                .enter()
-                .append("i")
-                .attr("class", "fa fa-user item");
+        // Verificamos si la pantalla tiene un ancho menor a 499 y es un dispositivo móvil
+        var isMobile = window.innerWidth < 499 && /Mobi/i.test(navigator.userAgent);
 
-            // Función para mostrar el tooltip
-            function showTooltip(d) {
-                d3.select("#tooltip")
-                    .html('<span class="user-comment">' + d.Comentario + "</span>" + '<span class="user">' + d.Usuario + ". " + d.fecha + "</span>")
-                    .attr("class", "tooltip-show");
+        // Obtener un comentario aleatorio que no se haya mostrado antes
+        function getRandomComment() {
+          var randomIndex = Math.floor(Math.random() * data.data.length);
+          var comment = data.data[randomIndex];
+          if (displayedComments.includes(comment)) {
+            // Si el comentario ya se ha mostrado, buscar otro
+            return getRandomComment();
+          } else {
+            // Agregar el comentario a los mostrados y devolverlo
+            displayedComments.push(comment);
+            return comment;
+          }
+        }
+
+        // Función para mostrar el tooltip
+        function showTooltip(d) {
+          d3.select("#tooltip")
+            .html('<span class="user-comment">' + d.Comentario + "</span>" + '<span class="user">' + d.Usuario + ". " + d.fecha + "</span>")
+            .attr("class", "tooltip-show");
+        }
+
+        // Función para ocultar el tooltip
+        function hideTooltip() {
+          d3.select("#tooltip").attr("class", "tooltip-hide");
+        }
+
+        if (isMobile) {
+          // Cambiar el tooltip cada 5 segundos en dispositivos móviles
+          var interval = setInterval(function () {
+            // Obtener un comentario aleatorio que no se haya mostrado antes
+            var comment = getRandomComment();
+
+            // Mostrar el comentario y seleccionar el elemento item correspondiente
+            showTooltip(comment);
+            d3.select("#container")
+              .selectAll(".item")
+              .filter(function (d) {
+                return d === comment;
+              })
+              .classed("selected", true);
+
+            // Eliminar la selección después de 1 segundo
+            setTimeout(function () {
+              d3.select("#container").selectAll(".item").classed("selected", false);
+            }, 1000);
+
+            // Verificar si se han mostrado todos los comentarios
+            if (displayedComments.length === itemCount) {
+              clearInterval(interval); // Detener el intervalo
             }
-
-            // Función para ocultar el tooltip
-            function hideTooltip() {
-                d3.select("#tooltip").attr("class", "tooltip-hide");
-            }
-
-            if (isMobile) {
-                let currentIndex = 0;
-                showTooltip(data.data[currentIndex]);
-
-                // Cambiar el comentario cada 5 segundos
-                setInterval(function () {
-                    currentIndex = (currentIndex + 1) % data.data.length;
-                    showTooltip(data.data[currentIndex]);
-                }, 5000);
-            } else {
-                icons.on("mouseover", function (event, d) {
-                    showTooltip(d);
-                });
-
-                // Ocultamos el comentario al quitar el cursor del icono en versiones no móviles
-                icons.on("mouseout", function (event, d) {
-                    hideTooltip();
-                });
-            }
-        });
+          }, 5000);
+        } else {
+          // Mostramos el comentario al hacer hover sobre el icono en versiones no móviles
+          var icons = d3
+            .select("#container")
+            .selectAll("i")
+            .data(data.data.slice(0, itemCount))
+            .enter()
+            .append("i")
+            .attr("class", "fa fa-user item")
+            .on("mouseover", function (event, d) {
+              showTooltip(d);
+            })
+            .on("mouseout", function (event, d) {
+              hideTooltip();
+            });
+        }
+      });
 
     </script>
     <script>
