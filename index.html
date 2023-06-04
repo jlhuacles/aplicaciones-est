@@ -137,7 +137,7 @@
         footer span {
             display: block;
             text-align: center;
-            color: #545b6a;
+            color: #fff;
             font-size: 14px;
             line-height: 1.5;
         }
@@ -192,8 +192,8 @@
             font-size: 2.2rem;
             font-family: sans-serif;
             width: 100%;
-            margin: -110px auto 25px;
-            padding-top: 120px;
+            /* margin: -110px auto 25px; */
+            /* padding-top: 120px; */
         }
 
         h4 {
@@ -236,6 +236,7 @@
             font-weight: 400;
             text-align: left;
             font-family: 'DM Sans', sans-serif;
+            padding-top: 15px;
         }
 
 
@@ -246,7 +247,8 @@
         .texto-lr,
         .texto-lr p {
             max-width: 750px;
-            margin: 0 auto 25px;
+            margin: 0 auto;
+            padding-bottom: 15px;
             line-height: 1.8;
             display: block;
             font-size: 16px;
@@ -908,6 +910,11 @@
             font-weight: 400;
         }
 
+        .comments .blue {
+            color: #3d8495;
+            font-weight: 400;
+        }
+
         .text-fixed span.b-text {
             line-height: 1;
         }
@@ -1380,7 +1387,7 @@
 
         #container {
             max-width: 100%;
-            height: 100vh;
+            /* height: 100vh; */
             margin: 0 auto 25px;
             display: block;
             box-sizing: border-box;
@@ -1419,7 +1426,17 @@
         }
 
         #h-section {
-            height: calc(100vh - 70px);
+            /* height: 100vh; */
+            background-image: url("./fondo-oscuro1.png");
+            padding: 25px 0px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #g-section {
+            height: 100vh;
+
+            padding: 25px 0px;
         }
 
         .text-viz {
@@ -1443,7 +1460,7 @@
             background-color: black;
         }
 
-        
+
 
         .user-comment::after {
             content: '"'
@@ -1452,6 +1469,85 @@
         .user-comment::before {
             content: '"'
         }
+
+        #w-section {
+            background-image: url("./fondo-plomo1.png");
+            background-repeat: repeat-y;
+            background-size: cover;
+        }
+
+        .tablet-section .texto-lr {
+            color: #fff;
+        }
+
+        /* estilos para FAQ */
+
+        .principal-comment {
+            width: 100%;
+            height: 300px;
+            position: relative;
+            border: 5px solid #036a93;
+        }
+
+        .slide-container {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            
+        }
+
+        .slide {
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            /* Color de fondo de cada slide */
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+
+        }
+
+        .slide-title {
+            background-color: #036a93;
+            padding: 5px 10px;
+            color: #fff
+        }
+        .slide-content{
+            font-size: 16px;
+            padding: 5px 10px;
+            line-height: normal;
+        }
+        .slide.active {
+            opacity: 1;
+        }
+
+        .slide-navigation {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: center;
+        }
+
+        .slide-navigation span {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #677784;
+
+            margin: 0 5px;
+            cursor: pointer;
+        }
+
+        .slide-navigation span.active {
+            background-color: #036a93;
+
+        }
+
+
 
         @media (max-width: 768px) {
             .app-icon {
@@ -1474,27 +1570,30 @@
             .tablet .screen {
                 height: 485px;
             }
+            .principal-comment{
+                height: 450px;
+            }
 
         }
 
-        @media(max-width:500px){
+        @media(max-width:500px) {
             .user-comment {
-            font-size: 16px;
-            background-color: black;
-            display: inline-block;
-            
-        }
+                font-size: 16px;
+                background-color: black;
+                display: inline-block;
 
-        .text-viz{
-            right: 25%;
-            z-index:333;
-            color: white;
-        }
+            }
 
-        .fa-user{
-            font-size: 1vw;
-            line-height: 1;
-        }
+            .text-viz {
+                right: 25%;
+                z-index: 333;
+                color: white;
+            }
+
+            .fa-user {
+                font-size: 1vw;
+                line-height: 1;
+            }
         }
     </style>
     <header id="w-header">
@@ -1556,14 +1655,15 @@
 
                         <p class="texto-solo">
                             <span class="comments">Lorem ipsum dolor sit amet consectetur adipiscing elit potenti
-                                blandit, dapibus ac porta quisque sed non integer habitant porttitor consequat, gravida
+                                blandit, dapibus ac porta quisque <i class="blue"> sed non integer habitant porttitor
+                                    consequat</i>, gravida
                                 phasellus faucibus tortor sagittis dictumst aptent massa. Mus dictumst
                                 fermentum</i></span>
                         </p>
 
                         <p class="texto-solo">
                             <span class="comments"><i class="red">30 acusados</i> de estos delitos figuran como los <i
-                                    class="red">más buscados</i> en el <i class="red">Programa de
+                                    class="blue">más buscados</i> en el <i class="blue">Programa de
                                     Recompensas.</i></span>
                         </p>
 
@@ -1575,38 +1675,7 @@
                     </div>
                 </div>
             </div>
-            <section id="h-section">
-                <div class="tablet-section">
-                    <div class="texto-lr">
-                        <h2>Aplicaciones de préstamo en Perú</h2>
-                    </div>
-                    <div class="tablet">
-                        <div class="top-bar">
-                            <div class="camera"></div>
-                            <div class="buttons">
-                                <div class="button"></div>
-                                <div class="button"></div>
-                                <div class="button"></div>
-                            </div>
-                        </div>
-                        <div class="screen" id="appContainer"></div>
-                    </div>
-                </div>
-            </section>
-            <section id="h-section">
 
-                <div id="container">
-                    <div class="text-viz">
-                        <div class="number titulo-viz">7082 quejas</div>
-                        <div class="titulo-viz"> De personan en Google Play Store narran la lucha infructuosa de los
-                            estafados por préstamos personales.
-                        </div>
-                    </div>
-                    <div id="tooltip" class="tooltip-hide"></div>
-                </div>
-            </section>
-            <!-- Modales -->
-            <div id="modalContainer"></div>
 
 
             <div id="content" style="margin-top: 0px;">
@@ -1614,27 +1683,49 @@
                     <h5 class="legend">Por: Pamela Huerta</h5>
                     <h5 class="legend line">Publicado el 4 de junio de 2023</h5>
                     <br>
-                    <p>No hay día en que las <span class="bold"> mujeres</span> no sean víctimas de algún tipo de
-                        violencia. A
-                        marzo del 2023 <a target="_blank"
-                            href="https://larepublica.pe/sociedad/2023/04/27/fiscalia-de-puno-investigara-como-feminicidio-muerte-de-enfermera-violacion-grupal-essalud-lrsd-1388313">se
-                            han registrado 49 feminicidios</a> y 64 tentativas, según el Ministerio de la Mujer y
-                        Poblaciones Vulnerables. Uno de los casos más mediáticos fue el asesinato por razón de género
-                        que
-                        cometió <a target="_blank"
-                            href="https://larepublica.pe/sociedad/2023/04/27/padres-de-katherine-gomez-piden-acelerar-regreso-de-tarache-1348731">Sergio
-                            Tarache Parra</a>, de 21 años, al quemar viva a Katherine Gómez, de 18, quien falleció luego
-                        de estar internada seis días en el hospital.</p>
-                    <p>Los días que Katherine sobrevivió fueron los mismos que demoró el juez para pedir la orden de
-                        captura de
-                        Tarache Parra, quien fue incluido al<span class="bold"> Programa de Recompensas </span> del
-                        Ministerio
-                        del Interior (Mininter) y la Policía Nacional, creado en el marco del Decreto Legislativo N.°
-                        1180 en el
-                        2015 para otorgar “un beneficio económico” a quienes brinden información que permita a la
-                        policía
-                        identificar y capturar a miembros de organizaciones criminales o requisitoriados.
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Non curabitur gravida arcu ac tortor dignissim convallis. Est
+                        velit egestas dui id ornare arcu odio. Lectus mauris ultrices eros in cursus. Dictumst quisque
+                        sagittis purus sit amet volutpat consequat. Varius quam quisque id diam vel. Et odio
+                        pellentesque diam volutpat commodo sed egestas. Morbi quis commodo odio aenean sed adipiscing
+                        diam. Nunc scelerisque viverra mauris in aliquam. </p>
+                    <p>Donec et odio pellentesque diam volutpat commodo. Condimentum vitae sapien pellentesque habitant.
+                        Fermentum leo vel orci porta non pulvinar. Magna fringilla urna porttitor rhoncus dolor purus
+                        non. Velit aliquet sagittis id consectetur. Convallis posuere morbi leo urna molestie. Orci
+                        dapibus ultrices in iaculis nunc. Consectetur a erat nam at lectus urna. Euismod elementum nisi
+                        quis eleifend quam adipiscing vitae proin.
                     </p>
+                </div>
+                <section id="h-section">
+                    <div class="tablet-section">
+                        <div class="texto-lr">
+                            <h2>Aplicaciones de préstamo en Perú</h2>
+                            <p>Nunc sed blandit libero volutpat sed cras ornare. Mi tempus imperdiet nulla malesuada
+                                pellentesque. Sollicitudin aliquam ultrices sagittis orci. Tempor nec feugiat nisl
+                                pretium fusce id velit ut tortor. Mauris pellentesque pulvinar pellentesque habitant
+                                morbi tristique senectus et netus. Aenean et tortor at risus viverra adipiscing at in
+                                tellus. Magna fermentum iaculis eu non diam phasellus. Purus sit amet luctus venenatis
+                                lectus magna fringilla urna. Dui ut ornare lectus sit amet. Consectetur purus ut
+                                faucibus pulvinar elementum integer enim neque volutpat.</p>
+                        </div>
+                        <div class="tablet">
+                            <div class="top-bar">
+                                <div class="camera"></div>
+                                <div class="buttons">
+                                    <div class="button"></div>
+                                    <div class="button"></div>
+                                    <div class="button"></div>
+                                </div>
+                            </div>
+                            <div class="screen" id="appContainer"></div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Modales -->
+                <div id="modalContainer"></div>
+
+                <div class="texto-lr">
                     <p>LR Data revisó la plataforma web de dicho programa y, al 24 de abril del 2023, de los 1.411
                         feminicidios
                         y 2.749 tentativas que se cuentan desde el 2012 a marzo del 2023, solo 30 denunciados por estos
@@ -1664,6 +1755,21 @@
                         organizaciones
                         no gubernamentales o de la misma sociedad civil.
                     </p>
+                </div>
+                <section id="g-section">
+
+                    <div id="container">
+                        <div class="text-viz">
+                            <div class="number titulo-viz">7082 quejas</div>
+                            <div class="titulo-viz"> De personan en Google Play Store narran la lucha infructuosa de los
+                                estafados por préstamos personales.
+                            </div>
+                        </div>
+                        <div id="tooltip" class="tooltip-hide"></div>
+                    </div>
+
+                </section>
+                <div class="texto-lr">
                     <p>Por brindar algún dato sobre estos feminicidas, la plataforma ofrece S/15.000 para tres de ellos,
                         S/18.000 para uno, S/20.000 para 17, S/30.000 para ocho y S/50.000 para<span class="bold">
                             Alberto
@@ -1696,6 +1802,66 @@
                         anularse su sentencia, pero un nuevo fallo judicial que lo sentenció a 22 años de cárcel
                         propició que
                         sea agregado nuevamente en la plataforma el 18 de mayo del 2021.</p>
+
+                    <div class="principal-comment">
+
+                        <div class="slide-container">
+                            <div class="slide">
+                                <div class="slide-title">Slide navigation</div>
+                                <div class="slide-content"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Morbi feugiat ac mi sed hendrerit. Phasellus fringilla commodo erat sit amet
+                                    volutpat. Maecenas leo sem, efficitur vel nibh non, dignissim lacinia arcu. Quisque
+                                    maximus, lectus quis sagittis lobortis, felis enim facilisis justo, aliquet
+                                    condimentum neque nisl et nunc. Duis non efficitur mauris. Sed efficitur eros eu
+                                    gravida ultrices. Ut rhoncus metus auctor facilisis finibus. Maecenas vitae ipsum id
+                                    nulla vulputate lacinia. Phasellus malesuada lacus non erat aliquam molestie. </div>
+                            </div>
+                            <div class="slide">
+                                <div class="slide-title">Slide navigation</div>
+                                <div class="slide-content">Mauris vitae ultrices purus. Mauris id velit vel velit
+                                    aliquam posuere. Pellentesque libero mauris, ultricies vitae risus vitae, facilisis
+                                    hendrerit nibh. Nunc ultricies tellus euismod venenatis interdum. Fusce tortor
+                                    turpis, sagittis in ipsum a, mollis commodo orci. Aliquam lorem dolor, facilisis nec
+                                    erat ac, molestie suscipit sem. Nunc placerat urna ut est commodo, vel aliquet elit
+                                    iaculis. Suspendisse interdum metus lectus, ut ullamcorper quam venenatis in. Nunc
+                                    tempus ornare mollis. Vivamus auctor tellus vitae dui laoreet, sed eleifend magna
+                                    dignissim. Maecenas ac facilisis massa.</div>
+                            </div>
+                            <div class="slide">
+                                <div class="slide-title">¿Slide navigation whta has?</div>
+                                <div class="slide-content">Nullam porttitor lectus vel iaculis hendrerit. Aenean
+                                    sagittis dolor justo, et commodo mauris suscipit sit amet. Orci varius natoque
+                                    penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras vitae
+                                    lobortis turpis. Vestibulum ac metus ac diam rhoncus volutpat quis ac nisi. Mauris
+                                    in odio mi. Cras nec scelerisque odio, ac euismod mauris. In nec ipsum arcu. Sed
+                                    massa lorem, condimentum ut varius iaculis, laoreet at metus.</div>
+                            </div>
+                            <div class="slide">
+                                <div class="slide-title">¿Slide navigation whta has?</div>
+                                <div class="slide-content">Praesent eu felis at turpis sollicitudin tempus non quis
+                                    quam. Aenean aliquet, massa at vehicula pulvinar, elit urna aliquam est, a
+                                    consectetur ligula metus quis lacus. Aenean tincidunt viverra dapibus. Proin quam
+                                    felis, mattis eu lorem quis, volutpat porta tortor. Phasellus id maximus sapien, id
+                                    volutpat tellus. Morbi facilisis eget diam vitae dictum. Pellentesque tristique
+                                    libero ut semper pulvinar. Curabitur id efficitur nisl. Duis ornare, diam nec
+                                    vestibulum sollicitudin, lacus nunc vehicula mi, vitae facilisis est felis sit amet
+                                    nibh. Vivamus fermentum dui quam, ut maximus nibh vehicula quis. Donec feugiat eros
+                                    ac quam elementum luctus.</div>
+                            </div>
+                            <div class="slide">
+                                <div class="slide-title">Slide navigation</div>
+                                <div class="slide-content">Integer cursus tortor ac diam tempus porta. Sed gravida
+                                    auctor neque, a tincidunt nibh sollicitudin id. In hac habitasse platea dictumst.
+                                    Sed id tempus mi. Aenean in leo feugiat magna pretium laoreet in eu leo. Etiam
+                                    efficitur libero vel pretium elementum. Phasellus feugiat leo id orci auctor, vel
+                                    iaculis erat volutpat. Aliquam id tempus lectus.</div>
+                            </div>
+                        </div>
+                        <div class="slide-navigation"></div>
+                    </div>
+
+
+
                     <p>En tanto, <span class="bold">Jhon Freddy Romero Salcedo</span> fue incluido luego de siete años.
                         El
                         ciudadano colombiano asesinó a J.S.N. de 27, en el 2014, cuyos restos fueron arrojados en el
@@ -1780,7 +1946,7 @@
             </div>
         </div>
     </section>
-    <footer style="background-color: #f0f0f0">
+    <footer style="background-color: #3d8495;">
         <div class="w-1000">
 
             <span><strong>Texto:</strong> Pamela Huerta</span>
@@ -2128,7 +2294,48 @@
         });
 
     </script>
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        const slideNavigation = document.querySelector('.slide-navigation');
+        let currentSlide = 0;
 
+        // Aquí estamos creando los circulos por cada comentario
+        slides.forEach((_, index) => {
+            const span = document.createElement('span');
+            span.addEventListener('click', () => changeSlide(index));
+            slideNavigation.appendChild(span);
+        });
+
+        // Mostrar la diapositiva inicial
+        slides[currentSlide].classList.add('active');
+        slideNavigation.children[currentSlide].classList.add('active');
+
+
+        function changeSlide(index) {
+            if (index === currentSlide) return;
+
+            slides[currentSlide].classList.remove('active');
+            slides[index].classList.add('active');
+
+            slideNavigation.children[currentSlide].classList.remove('active');
+            slideNavigation.children[index].classList.add('active');
+
+            currentSlide = index;
+        }
+
+        // Función para avanzar a la siguiente diapositiva
+        function nextSlide() {
+            let nextSlideIndex = currentSlide + 1;
+            if (nextSlideIndex >= slides.length) {
+                nextSlideIndex = 0;
+            }
+            changeSlide(nextSlideIndex);
+        }
+
+        // Cambiar de diapositiva automáticamente cada 3 segundos
+        setInterval(nextSlide, 11000);
+
+    </script>
 
 </body>
 
